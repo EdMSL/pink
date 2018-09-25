@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Эдуард Трайт](https://up.htmlacademy.ru/adaptive/15/user/674437).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/htmlcss/22/user/42638).
 
 ---
 
