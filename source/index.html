@@ -5,8 +5,136 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <div class="main-wrapper">
+        <div class="page-header__logo main-logo">
+          <img class="main-logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Pink">
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item nav-list__item--active"><a>Главная</a></li>
+            <li class="nav-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="nav-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="nav-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Главная страница Pink</h1>
+      <section class="download">
+        <div class="main-wrapper">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <a class="download__main-link" href="https://www.apple.com/ru/itunes/"> Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link" href="https://www.apple.com/ru/itunes/">
+                <span class="visually-hidden">Скачать в iTunes</span>
+                <img class="download__link-image" src="http://placehold.it/150x100" width="47" height="56">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link" href="https://play.google.com/store?hl=ru">
+                <span class="visually-hidden">Скачать в Google Play</span>
+                <img class="download__link-image" src="http://placehold.it/150x100" width="43" height="47">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link" href="https://www.microsoft.com/ru-ru/store/b/home">
+                <span class="visually-hidden">Скачать в Microsoft Store</span>
+                <img class="download__link-image" src="http://placehold.it/150x100" width="44" height="41">
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="main-wrapper">
+          <h2 class="visually-hidden">Преимущества приложения</h2>
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="main-wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews_item slider__item">
+              <cite class="reviews_author">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="reviews_item slider__item">
+              <cite class="reviews_author">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="reviews_item slider__item">
+              <cite class="reviews_author">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div>
+      </section>
+      <section class="tarifes">
+        <div class="main-wrapper slider">
+          <h2 class="visually-hidden">Тарифы на приложение</h2>
+          <ul class="tarifes__list">
+            <li class="tarifes__item">
+              <div class="tarifes__header">
+                <p class="tarifes__title">Стандарт</p>
+                <p class="tarifes__cost">3.99 usd</p>
+              </div>
+              <ul class="tarifes__consist consist-list">
+                <li class="consist-list__item consist-list__item--included">Розовый фильтр</li>
+                <li class="consist-list__item consist-list__item--included">Смайлики</li>
+                <li class="consist-list__item consist-list__item--not-included">Комментарии</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="tarifes__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-page-footer">
+      <section class="contats">
+        <div class="main-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contats__title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contats__text">Звоните:</p>
+          <a class="contats__contact-item" href="#">+7 (812) 555-66-66</a>
+          <p class="contats__text">Пишите:</p>
+          <a class="contats__contact-item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contats__text">Приезжайте в гости:</p>
+          <p class="contats__contact-item">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60378725332!2d30.320858716359368!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538381625949" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
