@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "mixins";
+
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensans.woff2") format("woff2"),
@@ -22,11 +24,6 @@
   font-weight: 700;
 }
 
-@mixin reset_indents {
-  width: 0;
-  height: 0;
-}
-
 html {
   height: 100%;
 }
@@ -38,4 +35,34 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+
+  background-color: #ffcccc;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
