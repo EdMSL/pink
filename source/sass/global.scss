@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "mixins";
+@import "mixins_variables";
 
 @font-face {
   font-family: "OpenSans";
@@ -61,7 +61,7 @@ input[type="radio"].visually-hidden{
   border: 0;
 
   white-space: nowrap;
-  
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
