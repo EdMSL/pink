@@ -1,0 +1,30 @@
+@import "mixins_variables";
+
+.reviews {
+  padding-top: 48px;
+  padding-bottom: 68px;
+
+  text-align: center;
+}
+
+.reviews__list {
+  margin-bottom: 40px;
+}
+
+.reviews__item  {
+  @include reset_indents;
+}
+
+.reviews__author {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+}

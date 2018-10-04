@@ -36,24 +36,24 @@
       <section class="download">
         <div class="main-wrapper">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <a class="download__main-link" href="https://www.apple.com/ru/itunes/"> Скачать приложение</a>
+          <a class="download__main-link main-button main-button--white" href="https://www.apple.com/ru/itunes/"> Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
               <a class="download__link" href="https://www.apple.com/ru/itunes/">
                 <span class="visually-hidden">Скачать в iTunes</span>
-                <img class="download__link-image" src="http://placehold.it/150x100" width="47" height="56">
+                <img class="download__link-image" src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://play.google.com/store?hl=ru">
                 <span class="visually-hidden">Скачать в Google Play</span>
-                <img class="download__link-image" src="http://placehold.it/150x100" width="43" height="47">
+                <img class="download__link-image" src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://www.microsoft.com/ru-ru/store/b/home">
                 <span class="visually-hidden">Скачать в Microsoft Store</span>
-                <img class="download__link-image" src="http://placehold.it/150x100" width="44" height="41">
+                <img class="download__link-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
               </a>
             </li>
           </ul>
@@ -65,6 +65,7 @@
           <h2 class="visually-hidden">Преимущества приложения</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+        </div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -79,7 +80,6 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-        </div>
       </section>
       <section class="reviews">
         <div class="main-wrapper slider">
@@ -99,30 +99,34 @@
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
         </div>
       </section>
       <section class="tarifes">
-        <div class="main-wrapper slider">
+        <div class="slider">
           <h2 class="visually-hidden">Тарифы на приложение</h2>
           <ul class="tarifes__list">
             <li class="tarifes__item">
-              <div class="tarifes__header">
-                <p class="tarifes__title">Стандарт</p>
-                <p class="tarifes__cost">3.99 usd</p>
+              <div class="tarifes__header tarifes__header--hit">
+                <div class="tarifes-wrapper">
+                  <p class="tarifes__title">Стандарт</p>
+                  <p class="tarifes__cost">3.99 usd</p>
+                </div>
               </div>
-              <ul class="tarifes__consist consist-list">
-                <li class="consist-list__item consist-list__item--included">Розовый фильтр</li>
-                <li class="consist-list__item consist-list__item--included">Смайлики</li>
-                <li class="consist-list__item consist-list__item--not-included">Комментарии</li>
-              </ul>
+              <div class="main-wrapper">
+                <ul class="tarifes__consist consist-list">
+                  <li class="consist-list__item consist-list__item--included">Розовый фильтр</li>
+                  <li class="consist-list__item consist-list__item--included">Смайлики</li>
+                  <li class="consist-list__item consist-list__item--not-included">Комментарии</li>
+                </ul>
+              </div>
             </li>
           </ul>
           <div class="tarifes__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
