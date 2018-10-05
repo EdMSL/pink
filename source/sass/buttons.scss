@@ -4,6 +4,7 @@
   display: inline-block;
   width: 100%;
   padding: 17px 0 19px;
+  vertical-align: top;
 
   font-size: 18px;
   line-height: 18px;
@@ -92,5 +93,36 @@
   &:focus,
   &:active {
     background-color: transparent;
+  }
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 18px 20px 15px;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main_white;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+  }
+
+  &:active {
+    color: transparentize($main_white, 0.7);
+    outline: none;
   }
 }
