@@ -11,9 +11,12 @@
   font-weight: 700;
   text-align: center;
 
-  border: 3px solid #ffffff;
+  border-style: solid;
+  border-width: 3px;
   border-radius: 28px;
   box-sizing: border-box;
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -23,12 +26,14 @@
 
 .main-button--white {
   color: $main_white;
+
   border-color: $main_white;
 
   &:hover,
   &:focus {
-    background-color: $main_white;
     color: $main_pink;
+
+    background-color: $main_white;
   }
 
   &:active {
@@ -37,17 +42,43 @@
 }
 
 .main-button--pink {
+  color: $main_pink;
+
   border-color: $main_pink;
-  color: $main_white;
 
   &:hover,
   &:focus {
-    background-color: $main_pink;
     color: $main_white;
+
+    background-color: $main_pink;
   }
 
   &:active {
     color: transparentize($main_white, 0.7);
+  }
+}
+
+.main-button--cancel {
+  color: $main_text;
+  border-color: $dark_bg;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: $main_text;
+
+    border-color: $dark_bg;
+
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: transparentize($main_white, 0.7);
+
+    background-color: $dark_bg;
+    border-color: $dark_bg;
+
+    opacity: 0.3;
   }
 }
 

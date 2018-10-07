@@ -1,0 +1,18 @@
+@import "mixins_variables";
+
+.alternative-logo {
+  display: block;
+  text-align: center;
+
+  &:hover .alternative-logo__letter {
+    fill: $main_pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .alternative-logo__letter {
+    fill: $main_text;
+  }
+}

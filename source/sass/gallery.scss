@@ -1,0 +1,80 @@
+@import "mixins_variables";
+
+.gallery {
+  padding: 52px 0 42px;
+}
+.gallery__text {
+  @include reset_indents;
+  margin-bottom: 56px;
+  padding: 0 38px;
+
+  text-align: center;
+}
+
+.gallery__item {
+  margin-bottom: 20px;
+  // padding: 0 20px;
+}
+.gallery__item--panoram {
+  // padding: 0 20px;
+}
+
+.gallery__image-block {
+  width: 100%;
+}
+
+.gallery__image {
+  display: block;
+}
+
+.gallery__description-block {
+  padding: 24px 18px;
+
+  background-color: #f2f2f2;
+}
+
+.gallery__post-author {
+  @include reset_indents;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.gallery__post-time {
+  @include reset_indents;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.gallery__post-text {
+  @include reset_indents;
+  margin-bottom: 16px;
+}
+
+.gallery__post-likes {
+  position: relative;
+
+  @include reset_indents;
+  margin-left: 32px;
+
+  font-size: 12px;
+  line-height: 24px;
+  color: $main_pink;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: -30px;
+
+    display: block;
+    width: 13px;
+    height: 12px;
+
+    background-image: url("../img/icon-heart.svg");
+  }
+}

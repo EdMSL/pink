@@ -1,0 +1,14 @@
+@import "mixins_variables";
+
+.image-filter__image-block {
+  margin-bottom: 42px;
+}
+
+.image-filter__image {
+  display: block;
+}
+
+.image-filter__filter-change {
+  display: flex;
+  justify-content: center;
+}
