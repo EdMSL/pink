@@ -1,0 +1,131 @@
+@import "base/mixins_variables";
+
+.tarifes {
+  padding-top: 68px;
+  padding-bottom: 48px;
+
+  background-color: #f2f2f2;
+}
+
+.tarifes__list,
+.consist-list {
+  @include reset_indents;
+  list-style: none;
+}
+
+
+.tarifes__header {
+  position: relative;
+
+  padding: 0 20px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: $dark_bg;
+
+  overflow: hidden;
+}
+
+.tarifes-wrapper {
+  padding: 25px 20px;
+
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.tarifes__header--hit {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 5px;
+    z-index: 1;
+
+    width: 100px;
+    height: 30px;
+
+    background-color: $main_pink;
+
+    transform: rotate(-45deg) skew(-45deg);
+  }
+
+  &::before {
+    content: "ХИТ";
+
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    z-index: 2;
+
+    font-weight: 700;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.tarifes__title {
+  @include reset_indents;
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tarifes__cost {
+  @include reset_indents;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.consist-list {
+  margin-bottom: 40px;
+
+  border: 2px solid #e5e5e5;
+  border-top: none;
+}
+
+.consist-list__item {
+  position: relative;
+
+  padding: 25px 20px;
+
+  text-transform: uppercase;
+
+  border-bottom: 2px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 17px;
+
+    width: 31px;
+    height: 21px;
+
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.consist-list__item--included {
+  &::after {
+    background-image: url("../img/icon-yes.svg");
+  }
+}
+
+.consist-list__item--not-included {
+  &::after {
+    background-image: url("../img/icon-no.svg");
+  }
+}

@@ -1,0 +1,164 @@
+@import "mixins_variables";
+
+.main-button {
+  display: inline-block;
+  width: 100%;
+  padding: 17px 0 19px;
+  vertical-align: top;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 28px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+.main-button--white {
+  color: $main_white;
+
+  border-color: $main_white;
+
+  &:hover,
+  &:focus {
+    color: $main_pink;
+
+    background-color: $main_white;
+  }
+
+  &:active {
+    color: transparentize($main_pink, 0.7);
+  }
+}
+
+.main-button--pink {
+  color: $main_pink;
+
+  border-color: $main_pink;
+
+  &:hover,
+  &:focus {
+    color: $main_white;
+
+    background-color: $main_pink;
+  }
+
+  &:active {
+    color: transparentize($main_white, 0.7);
+  }
+}
+
+.main-button--cancel {
+  color: $main_text;
+  border-color: $dark_bg;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: $main_text;
+
+    border-color: $dark_bg;
+
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: transparentize($main_white, 0.7);
+
+    background-color: $dark_bg;
+    border-color: $dark_bg;
+
+    opacity: 0.3;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  @include reset_indents;
+  margin-right: 19px;
+  width: 6px;
+  height: 6px;
+
+  font-size: 0;
+
+  background-color: transparentize($dark_bg, 0.7);
+  border: none;
+  border-radius: 50%;
+  box-sizing: content-box;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparentize($dark_bg, 0.3);
+    outline: none;
+  }
+
+  &:active {
+    background-color: transparentize($dark_bg, 0.9);
+    outline: none;
+  }
+}
+
+.slider__toggle--active {
+  background-color: transparent;
+  border: 3px solid $dark_bg;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 18px 20px 15px;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main_white;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+  }
+
+  &:active {
+    color: transparentize($main_white, 0.7);
+    outline: none;
+  }
+}

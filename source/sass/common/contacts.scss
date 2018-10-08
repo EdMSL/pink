@@ -1,0 +1,57 @@
+@import "base/mixins_variables";
+
+.contaсts {
+  padding: 46px 0 38px;
+
+  text-align: center;
+}
+
+.contaсts__title {
+  @include reset_indents;
+  margin-bottom: 36px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.contaсts__text {
+  @include reset_indents;
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.contaсts__contact-item {
+  position: relative;
+
+  display: block;
+
+  @include reset_indents;
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: $main_pink;
+
+  &:hover:not(p) {
+    color: $main_text;
+  }
+
+  &:hover:not(p)::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-color: $main_text;
+  }
+}

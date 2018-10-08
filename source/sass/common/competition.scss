@@ -1,0 +1,199 @@
+@import "base/mixins_variables";
+
+.competition {
+  padding-top: 52px;
+  padding-bottom: 30px;
+}
+
+.competition__description {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 20px 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+
+  border: none;
+
+  &:last-of-type {
+    padding-bottom: 48px;
+  }
+}
+
+.form-list__item--dark {
+  background-color: #f2f2f2;
+}
+
+.form-list__label-text {
+  @include reset_indents;
+  margin-bottom: 10px;
+  margin-left: 22px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $main_pink;
+  text-transform: uppercase;
+}
+
+.form-list__title {
+  @include reset_indents;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $main_pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-list__text-field {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 16px 20px 13px;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $main_text;
+
+  background-color: none;
+  border: 2px solid #e5e5e5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    color: $main_text;
+  }
+
+  &:hover {
+    border-color: $main_text;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $main_pink;
+  }
+}
+
+.form-list__text-field--message {
+  min-height: 200px;
+
+  font-family: inherit;
+
+  resize: vertical;
+}
+
+.form-list__label-change {
+  position: relative;
+
+  @include reset_indents;
+  margin-bottom: 43px;
+  margin-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    left: -70px;
+
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover::before, {
+    border-color: $main_text;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+  }
+}
+
+.form-list__label-change--checkbox {
+  &::after {
+    top: 4px;
+    left: -60px;
+
+    display: none;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/icon-yes_alternative.svg");
+  }
+}
+
+.form-list__label-change--radio {
+  &::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: 6px;
+    left: -58px;
+
+    display: none;
+    width: 14px;
+    height: 14px;
+
+    background-color: $main_pink;
+    border-radius: 50%;
+  }
+}
+
+.form-list__input-change:checked + .form-list__label-change::after, {
+  display: block;
+}
+
+.form-list__input-change:focus + .form-list__label-change::before,
+.form-list__input-change:checked:hover + .form-list__label-change::before,
+.form-list__input-change:checked:focus + .form-list__label-change::before {
+  border-color: $main_text;
+}
+
+.form-list__input-change:active + .form-list__label-change::before,
+.form-list__input-change:checked:active + .form-list__label-change::before {
+  border-color: $main_pink;
+}
+
+.form-list__submit-btn {
+  margin-bottom: 40px;
+}
+
+.form-list__text {
+  @include reset_indents;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-list__tip {
+  color: $main_pink;
+}

@@ -1,0 +1,47 @@
+@import "base/mixins_variables.scss";
+
+.download {
+  padding-top: 28px;
+  padding-bottom: 35px;
+
+  background-color: $dark_bg;
+}
+
+.download__main-link {
+  margin-bottom: 32px;
+}
+
+.download__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include reset_indents;
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+.download__item {
+  @include reset_indents;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.download__link {
+  background-color: $main-white;
+}
+
+.download__link-image {
+  display: block;
+}
+
+.download__description {
+  @include reset_indents;
+
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+}

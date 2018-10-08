@@ -1,0 +1,9 @@
+$main_pink: #d22856;
+$main_white: #ffffff;
+$main_text: #283645;
+$dark_bg: #283645;
+
+@mixin reset_indents {
+  margin: 0;
+  padding: 0;
+}

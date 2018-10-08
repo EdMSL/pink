@@ -1,0 +1,47 @@
+@import "base/mixins_variables";
+
+.advantages {
+  padding-top: 45px;
+}
+
+.advantages__slogan {
+  @include reset_indents;
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.advantages__list {
+  position: relative;
+
+  @include reset_indents;
+  margin-top: 30px;
+  padding-top: 52px;
+  padding-bottom: 325px;
+
+  text-align: center;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__title {
+  margin-bottom: 18px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}

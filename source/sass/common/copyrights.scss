@@ -1,0 +1,34 @@
+@import "base/mixins_variables";
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.copyrights__text {
+  @include reset_indents;
+  margin-right: 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyrights__link {
+  & svg {
+    display: block;
+
+    fill: $main_pink;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main_text;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
