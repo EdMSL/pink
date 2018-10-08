@@ -102,9 +102,7 @@
   &:last-child {
     border-bottom: none;
   }
-}
 
-.consist-list__item {
   &::after {
     content: "";
 
@@ -119,6 +117,7 @@
     background-position: center center;
   }
 }
+
 .consist-list__item--included {
   &::after {
     background-image: url("../img/icon-yes.svg");

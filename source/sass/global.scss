@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import "mixins_variables";
 
 @font-face {
@@ -9,6 +8,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensanslight.woff2") format("woff2"),
@@ -16,6 +16,7 @@
   font-style: normal;
   font-weight: 300;
 }
+
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff2") format("woff2"),
