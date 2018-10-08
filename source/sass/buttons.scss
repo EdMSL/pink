@@ -22,6 +22,10 @@
   &:focus {
     outline: none;
   }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .main-button--white {
@@ -113,6 +117,7 @@
 
   &:active {
     background-color: transparentize($dark_bg, 0.9);
+    outline: none;
   }
 }
 

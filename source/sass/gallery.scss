@@ -1,7 +1,7 @@
 @import "mixins_variables";
 
 .gallery {
-  padding: 52px 0 42px;
+  padding: 52px 0 0;
 }
 .gallery__text {
   @include reset_indents;
@@ -13,7 +13,10 @@
 
 .gallery__item {
   margin-bottom: 20px;
-  // padding: 0 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .gallery__item--panoram {
   // padding: 0 20px;
