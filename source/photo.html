@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк.Конкурс</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -126,7 +125,7 @@
         <h2 class="visually-hidden">Добавить фото в галерею</h2>
         <p class="posting__text">Затмите их всех!</p>
         <p class="posting__text">Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="posting__filter image-filter">
+        <form class="posting__filter image-filter" action="https://echo.htmlacademy.ru" method="post">
           <div class="image-filter__image-block">
             <img class="image-filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото Для добавления в галерею">
           </div>
@@ -161,9 +160,9 @@
               </div>
             </div>
           </div>
-          <button class="posting__main-button main-button main-button--pink">Запостить</button>
-          <button class="posting__main-button main-button main-button--cancel">Отмена</button>
-        </div>
+          <button class="posting__main-button main-button main-button--pink" type="submit">Запостить</button>
+          <button class="posting__main-button main-button main-button--cancel" type="reset">Отмена</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
