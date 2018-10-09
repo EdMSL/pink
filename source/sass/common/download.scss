@@ -11,6 +11,17 @@
   margin-bottom: 32px;
 }
 
+.download__slogan {
+  display: none;
+
+  @include reset_indents;
+
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  color: $main-white;
+}
+
 .download__list {
   display: flex;
   justify-content: center;

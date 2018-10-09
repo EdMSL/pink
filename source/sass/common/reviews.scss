@@ -24,6 +24,15 @@
   font-style: normal;
 }
 
+.reviews__author-info {
+  display: none;
+
+  @include reset_indents;
+
+  font-size: 14px;
+  height: 30px;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
