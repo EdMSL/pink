@@ -27,7 +27,7 @@
 .contaсts__contact-item {
   position: relative;
 
-  display: block;
+  display: inline-block;
 
   @include reset_indents;
   margin-bottom: 24px;
