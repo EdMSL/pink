@@ -1,7 +1,7 @@
 @import "base/mixins_variables";
 
 .advantages {
-  padding-top: 45px;
+  padding-top: 55px;
 
   overflow: hidden;
 }
@@ -22,12 +22,12 @@
   }
 }
 
-.advantages__main-wrapper {
+.advantages__wrapper {
   position: relative;
   z-index: 10;
 
   margin: 0 -5px;
-  padding-bottom: 30px;
+  padding-bottom: 54px;
 
   background-color: #ffffff;
 
@@ -55,9 +55,10 @@
   position: relative;
 
   @include reset_indents;
-  margin-top: -60px;
-  padding-top: 80px;
-  padding-bottom: 325px;
+  margin-top: -70px;
+  margin-bottom: -40px;
+  padding-top: 114px;
+  padding-bottom: 330px;
 
   text-align: center;
 
@@ -69,17 +70,27 @@
 }
 
 .advantages__item {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .advantages__title {
   @include reset_indents;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+.advantages__description {
+  @include reset_indents;
+}
+
+@media (min-width: $tablet_width) {
+  .advantages {
+    padding-top: 82px;
+  }
 }

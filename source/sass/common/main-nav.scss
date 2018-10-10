@@ -32,6 +32,10 @@
   }
 }
 
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
 .main-nav--close .nav-list {
   display: none;
 }
@@ -108,7 +112,7 @@
 
 .nav-list__link {
   display: block;
-  padding: 23px 20px 19px;
+  padding: 18px 20px 14px;
 
   font-size: 18px;
   line-height: 32px;
@@ -135,5 +139,11 @@
   &:hover,
   &:focus {
     color: $main_white;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .main-nav__toggle {
+    top: -66px;
   }
 }

@@ -1,10 +1,14 @@
 @import "base/mixins_variables.scss";
 
 .download {
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 35px;
 
   background-color: $dark_bg;
+}
+
+.download__wrapper {
+  padding: 0 20px;
 }
 
 .download__main-link {
@@ -55,4 +59,36 @@
   color: #ffffff;
   font-weight: 300;
   text-align: center;
+}
+
+@media (min-width: $tablet_width) {
+  .download {
+    float: left;
+    width: 320px;
+    padding-top: 93px;
+    padding-bottom: 110px;
+
+    background-color: transparent;
+  }
+
+  .download__wrapper {
+    padding-right: 0;
+  }
+
+  .download__slogan {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .download__main-link {
+    margin-bottom: 46px;
+  }
+
+  .download__list {
+    margin-bottom: 35px;
+  }
+
+  .download__description {
+    font-size: 18px;
+  }
 }

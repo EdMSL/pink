@@ -8,7 +8,7 @@
   <body>
     <header class="page-header page-header--index">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
+        <div class="page-header__logo page-header__logo--fill">
           <svg class="main-logo-image" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="22px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
           <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -16,7 +16,7 @@
           <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
           </svg>
         </div>
-        <nav class="main-nav main-nav--close">
+        <nav class="main-nav main-nav--open main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -29,7 +29,7 @@
         </nav>
       </div>
       <section class="download">
-        <div class="main-wrapper">
+        <div class="download__wrapper">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <p class="download__slogan">Взгляните на жизнь иначе!</p>
           <a class="download__main-link main-button main-button--white" href="https://www.apple.com/ru/itunes/"> Скачать приложение</a>
@@ -59,14 +59,8 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница Pink</h1>
-
-      <section class="analysis">
-        <b class="analysis__title">Эффект на 24 часа!</b>
-        <p class="analysis__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="analysis__link" href="#">Узнать больше об исследовании</a>
-      </section>
       <section class="advantages">
-        <div class="advantages__main-wrapper main-wrapper">
+        <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам предложить!</p>
@@ -86,58 +80,65 @@
           </li>
         </ul>
       </section>
-      <section class="reviews">
-        <div class="main-wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </div>
-          <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </div>
-        </div>
+      <section class="analysis">
+        <b class="analysis__title">Эффект на 24 часа!</b>
+        <p class="analysis__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="analysis__link" href="#">Узнать больше об исследовании</a>
       </section>
-      <section class="tarifes">
-        <div class="slider">
-          <h2 class="visually-hidden">Тарифы на приложение</h2>
-          <ul class="tarifes__list">
-            <li class="tarifes__item">
-              <div class="tarifes__header tarifes__header--hit">
-                <div class="tarifes-wrapper">
-                  <p class="tarifes__title">Стандарт</p>
-                  <p class="tarifes__cost">3.99 usd</p>
+      <div class="block-wrapper">
+        <section class="reviews">
+          <div class="reviews__main-wrapper main-wrapper slider">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <div class="reviews__list slider__list">
+              <!-- <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote> -->
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </div>
+            <div class="reviews__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </div>
+          </div>
+        </section>
+        <section class="tarifes">
+          <div class="slider">
+            <h2 class="visually-hidden">Тарифы на приложение</h2>
+            <ul class="tarifes__list">
+              <li class="tarifes__item">
+                <div class="tarifes__header tarifes__header--hit">
+                  <div class="tarifes-wrapper">
+                    <p class="tarifes__title">Стандарт</p>
+                    <p class="tarifes__cost">3.99 usd</p>
+                  </div>
                 </div>
-              </div>
-              <div class="main-wrapper">
-                <ul class="tarifes__consist consist-list">
-                  <li class="consist-list__item consist-list__item--included">Розовый фильтр</li>
-                  <li class="consist-list__item consist-list__item--included">Смайлики</li>
-                  <li class="consist-list__item consist-list__item--not-included">Комментарии</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <div class="tarifes__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+                <div class="main-wrapper">
+                  <ul class="tarifes__consist consist-list">
+                    <li class="consist-list__item consist-list__item--included">Розовый фильтр</li>
+                    <li class="consist-list__item consist-list__item--included">Смайлики</li>
+                    <li class="consist-list__item consist-list__item--not-included">Комментарии</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="tarifes__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="main-page-footer">
       <section class="contaсts">

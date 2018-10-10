@@ -1,10 +1,22 @@
 @import "base/mixins_variables";
 
 .reviews {
-  padding-top: 48px;
-  padding-bottom: 68px;
+  padding-top: 58px;
+  padding-bottom: 53px;
+  margin-left: -50px;
 
   text-align: center;
+
+  background-color: #ffffff;
+
+  transform-origin: left center;
+  transform: rotate(-5deg);
+}
+
+.reviews__main-wrapper {
+  margin-left: 50px;
+
+  transform: rotate(5deg);
 }
 
 .reviews__list {
@@ -16,7 +28,8 @@
 }
 
 .reviews__author {
-  margin-bottom: 24px;
+  display: block;
+  margin-bottom: 10px;
 
   font-size: 18px;
   line-height: 30px;
@@ -34,11 +47,8 @@
 }
 
 .reviews__text {
+  @include reset_indents;
+
   font-size: 14px;
   line-height: 30px;
-}
-
-.reviews__toggles {
-  transform-origin: left center;
-  transform: rotate(-3deg);
 }
