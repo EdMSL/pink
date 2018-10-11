@@ -22,16 +22,14 @@
 }
 
 .page-header__logo {
+  padding: 22px 20px;
+
   background-color: transparentize(#000000, 0.7);
 }
 
 .page-header__logo--fill {
   background-color: $dark_bg;
   box-shadow: inset 0 -1px 0 #000000;
-}
-
-.page-header__logo {
-  padding: 22px 20px;
 }
 
 .page-header__title {
@@ -48,5 +46,15 @@
 @media (min-width: $tablet_width) {
   .page-header__logo {
     padding: 44px 20px;
+  }
+
+  .page-header--index .main-nav {
+    margin-bottom: 0;
+  }
+
+  .page-header--index {
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: right bottom, center top;
+    background-size: contain, cover;
   }
 }

@@ -10,8 +10,9 @@
   background-color: #ffffff;
 }
 
-.reviews__main-wrapper {
+.reviews__wrapper {
   margin-left: 50px;
+  padding: 0 20px;
 }
 
 .reviews__list {
@@ -24,6 +25,8 @@
 
 .reviews__author {
   display: block;
+
+  @include reset_indents;
   margin-bottom: 10px;
 
   font-size: 18px;
@@ -46,4 +49,22 @@
 
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet_width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-info {
+    display: block;
+  }
+
+  .reviews__text {
+    order: -1;
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
 }

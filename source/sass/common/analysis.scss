@@ -3,3 +3,81 @@
 .analysis {
   display: none;
 }
+
+.analysis__title {
+  @include reset_indents;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.analysis__description {
+  @include reset_indents;
+}
+
+.analysis__link {
+  color: $main_pink;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet_width) {
+  .analysis {
+    display: block;
+  }
+
+  .analysis__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 620px;
+    margin: 0 auto;
+    padding: 95px 20px 110px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 238px 276px;
+
+    &::after {
+      content: "24";
+
+      position: absolute;
+      top: 133px;
+      left: 38px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 202px;
+      height: 202px;
+      box-sizing: border-box;
+
+      font-size: 96px;
+      line-height: 96px;
+      font-weight: 700;
+      color: $main_pink;
+
+      background-color: #dedede;
+      border: 10px solid $main_pink;
+      border-radius: 50%;
+    }
+  }
+
+  .analysis__title,
+  .analysis__description,
+  .analysis__link {
+    width: 310px;
+  }
+
+  .analysis__title {
+    margin-bottom: 14px;
+  }
+
+  .analysis__description {
+    margin-bottom: 18px;
+  }
+}
