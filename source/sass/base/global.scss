@@ -57,3 +57,11 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .main-wrapper {
+    width: 940px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

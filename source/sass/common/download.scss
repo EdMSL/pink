@@ -18,6 +18,8 @@
 .download__slogan {
   display: none;
 
+  text-align: center;
+
   @include reset_indents;
 
   font-size: 40px;
@@ -89,5 +91,32 @@
 
   .download__description {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .download {
+    padding-top: 108px;
+    padding-bottom: 125px;
+  }
+
+  .download__wrapper {
+    padding-left: 10px;
+  }
+
+  .download__slogan {
+    margin-bottom: 50px;
+    padding: 0 5px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__main-link {
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 58px;
   }
 }
