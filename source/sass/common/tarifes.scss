@@ -1,10 +1,27 @@
 @import "base/mixins_variables";
 
 .tarifes {
-  padding-top: 15px;
-  padding-bottom: 48px;
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 47px;
 
   background-color: #f2f2f2;
+
+  overflow: hidden;
+}
+
+.tarifes__main-wrapper {
+  padding: 0;
+}
+
+.tarifes__list {
+  width: 620px;
+
+  @include reset_indents;
+  margin: 0 auto;
+
+  border-collapse: separate;
 
   & td,
   & th {
@@ -16,16 +33,6 @@
     text-align: center;
   }
 }
-
-.tarifes__list {
-  width: 620px;
-
-  @include reset_indents;
-  margin: 0 auto;
-
-  border-collapse: separate;
-}
-
 
 .tarifes__header {
   padding: 10px 0 10px;
@@ -76,15 +83,47 @@
 
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  border-top: none;
+}
+
+.tarifes__option--first {
+  box-shadow: 0 -2px 0 0 #e5e5e5;
 }
 
 .tarifes__option-availability {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  border-top: none;
   border-left: none;
 }
 
+.tarifes__option-availability--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 31px auto;
+}
+
+.tarifes__option-availability--no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 27px auto;
+}
+
+.tarifes__toggles {
+  margin-top: 40px;
+}
+
 @media (min-width: $tablet_width) {
+  .tarifes {
+    padding-bottom: 67px;
+  }
+
+  .tarifes__main-wrapper {
+    padding: 0 20px;
+  }
+
   .tarifes__title {
     font-size: 16px;
     text-transform: none;
@@ -96,5 +135,9 @@
 
   .tarifes__option {
     text-transform: none;
+  }
+
+  .tarifes__toggles {
+    display: none;
   }
 }

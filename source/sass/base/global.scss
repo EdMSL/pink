@@ -50,3 +50,10 @@ input[type="radio"].visually-hidden {
 .block-wrapper {
   overflow: hidden;
 }
+
+@media (min-width: $tablet_width) {
+  .main-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}

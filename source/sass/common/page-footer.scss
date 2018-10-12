@@ -3,10 +3,31 @@
   padding-bottom: 40px;
 }
 
+.page-footer--index {
+  display: none;
+}
+
 .page-footer__alternative-logo {
   margin-bottom: 40px;
 }
 
 .page-footer__social-buttons {
   margin-bottom: 42px;
+}
+
+@media (min-width: $tablet_width) {
+  .page-footer--index {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+  }
+
+  .page-footer__alternative-logo,
+  .page-footer__social-buttons {
+    margin-bottom: 0;
+  }
 }
