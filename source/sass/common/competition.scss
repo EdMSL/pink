@@ -13,12 +13,16 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  &:last-of-type {
+    display: none;
+  }
 }
 
 .form-list__item {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 0 20px 40px;
 
   border: none;
 
@@ -27,8 +31,15 @@
   }
 }
 
-.form-list__item--dark {
+.form-list__item--progress,
+.form-list__item--version {
+  padding-top: 70px;
+
   background-color: #f2f2f2;
+}
+
+.form-list__item--contacts legend {
+  display: none;
 }
 
 .form-list__label-text {
@@ -44,7 +55,7 @@
 
 .form-list__title {
   @include reset_indents;
-  margin-bottom: 40px;
+  margin: 0 auto 0;
 
   font-size: 14px;
   line-height: 30px;
@@ -53,10 +64,13 @@
   text-transform: uppercase;
 }
 
+.form-list__input-field {
+  margin-bottom: 25px;
+}
+
 .form-list__text-field {
   width: 100%;
   margin: 0;
-  margin-bottom: 25px;
   padding: 16px 20px 13px;
   box-sizing: border-box;
 
@@ -196,4 +210,64 @@
 
 .form-list__tip {
   color: $main_pink;
+}
+
+@media (min-width: $tablet_width) {
+  .competition__description {
+    width: 500px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    &:last-of-type {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-list__item {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 35px;
+    box-sizing: border-box;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-list__item--personal {
+    padding: 0;
+
+    border: none;
+  }
+
+  .form-list__title {
+    padding: 0 20px;
+  }
+
+  .form-list__item--progress,
+  .form-list__item--version {
+    padding-top: 45px;
+
+    background-color: transparent;
+  }
+
+  .form-list__item--contacts legend {
+    display: block;
+  }
+
+  .form-list__input-field {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form-list__label-text {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .form-list__text-field {
+    flex-grow: 1;
+    width: auto;
+  }
 }

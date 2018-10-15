@@ -34,8 +34,11 @@
 }
 
 .page-header__title {
+  width: 240px;
+
   @include reset_indents;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
 
   font-size: 24px;
   line-height: 29px;
@@ -53,6 +56,16 @@
 
   .page-header--index .main-nav {
     margin-bottom: 0;
+  }
+
+  .page-header__title {
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
