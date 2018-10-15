@@ -81,3 +81,40 @@
     margin-bottom: 18px;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .analysis {
+    background-color: #f2f2f2;
+  }
+  
+  .analysis__wrapper {
+    width: 940px;
+    padding: 90px 10px 120px;
+
+    background-position: 10px top;
+    background-size: 298px 345px;
+
+    &::after {
+      top: 87px;
+      left: 50px;
+
+      width: 218px;
+      height: 218px;
+
+      font-size: 120px;
+      line-height: 186px;
+    }
+  }
+
+  .analysis__title,
+  .analysis__description,
+  .analysis__link {
+    width: 570px;
+  }
+
+  .analysis__description,
+  .analysis__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -87,6 +87,8 @@
 }
 
 .slider__toggles {
+  position: relative;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,4 +163,46 @@
     color: transparentize($main_white, 0.7);
     outline: none;
   }
+}
+
+.slider__toggle-arrow {
+  position: absolute;
+
+  display: block;
+  width: 22px;
+  height: 41px;
+
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: -3px;
+
+    width: 28px;
+    height: 1px;
+    background-color: #bec2c7;
+  }
+
+  &::before {
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    top: 30px;
+    transform: rotate(45deg);
+  }
+}
+
+.slider__toggle-arrow--left {
+  left: 0;
+}
+
+.slider__toggle-arrow--right {
+  right: 0;
+  transform: rotate(180deg);
 }

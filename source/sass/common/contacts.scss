@@ -137,3 +137,22 @@
     }
   }
 }
+
+@media (min-width: $desktop_width) {
+  .contacts__title-box {
+    margin-bottom: 57px;
+  }
+
+  .contaсts__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contaсts__item--email {
+    order: 1;
+  }
+
+  .contacts__map {
+    height: 500px;
+  }
+}

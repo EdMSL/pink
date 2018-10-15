@@ -63,7 +63,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .tarifes__price {
@@ -126,7 +125,6 @@
 
   .tarifes__title {
     font-size: 16px;
-    text-transform: none;
   }
 
   .tarifes__price {
@@ -139,5 +137,28 @@
 
   .tarifes__toggles {
     display: none;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .tarifes__list {
+    width: 940px;
+
+    & td,
+    & th {
+      width: 230px;
+    }
+  }
+
+  .tarifes__header {
+    padding: 15px 0;
+  }
+
+  .tarifes__option {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }
