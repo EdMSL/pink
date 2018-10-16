@@ -44,3 +44,10 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet_width) {
+  .posting__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
