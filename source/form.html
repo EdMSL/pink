@@ -37,66 +37,81 @@
       <h1 class="visually-hidden">Страница конкурса Pink</h1>
       <section class="competition">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <p class="competition__description">Пожалуйста, заполните форму ниже:</p>
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__description-element">Пожалуйста, заполните форму ниже:</span></p>
         <form class="competition__form form-list" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-list__item form-list__item--personal">
-            <legend class="visually-hidden">Фамилия Имя Отчество</legend>
-            <div class="form-list__input-field">
-              <label class="form-list__label-text" for="form_surname">Фамилия</label>
-              <input class="form-list__text-field" type="text" name="surname" id="form_surname" placeholder="Укажите фамилию*" required>
-            </div>
-            <div class="form-list__input-field">
-              <label class="form-list__label-text" for="form_name">Имя</label>
-              <input class="form-list__text-field" type="text" name="name" id="form_name" placeholder="Введите ваше имя*" required>
-            </div>
-            <div class="form-list__input-field">
-              <label class="form-list__label-text" for="form_patronymic">Отчество</label>
-              <input class="form-list__text-field" type="text" name="patronymic" id="form_patronymic" placeholder="Ну и отчество тоже">
-            </div>
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--progress">
-            <legend class="form-list__title">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_selfy" id="form_attainment_first" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_first">Сделал селфи с акулой</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_beach" id="form_attainment_second" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_second">Обгорел на пляже</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_noris" id="form_attainment_third">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_third">Видел Чака Норриса</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_souvenirs" id="form_attainment_fourth">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fourth">Накупил сувениров</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_tower" id="form_attainment_fifth" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fifth">Удержал башню</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_crush" id="form_attainment_seventh">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_seventh">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--contacts">
-            <legend class="form-list__title">Контактная информация</legend>
-            <div class="form-list__input-field">
-              <label class="form-list__label-text" for="form_contacts_phone">Номер телефона</label>
-              <input class="form-list__text-field" type="tel" name="phone" id="form_contacts_phone" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form-list__input-field">
-              <label class="form-list__label-text" for="form_contacts_email">Адрес почты</label>
-              <input class="form-list__text-field" type="email" name="email" id="form_contacts_email" placeholder="Ведите почту*" required>
-            </div>
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--version">
-            <legend class="form-list__title">С каким приложением вы путешествовали?</legend>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--review">
-            <legend class="form-list__title">Опишите свои эмоции</legend>
-            <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
-          <div class="main-wrapper">
+          <div class="form-list__wrapper form-list__wrapper--personal">
+            <fieldset class="form-list__item form-list__item--personal">
+              <legend class="visually-hidden">Фамилия Имя Отчество</legend>
+              <div class="form-list__inputs-wrapper">
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_surname">Фамилия</label>
+                  <input class="form-list__text-field" type="text" name="surname" id="form_surname" placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_name">Имя</label>
+                  <input class="form-list__text-field" type="text" name="name" id="form_name" placeholder="Введите ваше имя*" required>
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_patronymic">Отчество</label>
+                  <input class="form-list__text-field" type="text" name="patronymic" id="form_patronymic" placeholder="Ну и отчество тоже">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--progress">
+            <fieldset class="form-list__item form-list__item--progress">
+              <legend class="form-list__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-list__inputs-wrapper">
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_selfy" id="form_attainment_first" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_first">Сделал селфи с акулой</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_beach" id="form_attainment_second" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_second">Обгорел на пляже</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_noris" id="form_attainment_third">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_third">Видел Чака Норриса</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_souvenirs" id="form_attainment_fourth">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fourth">Накупил сувениров</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_tower" id="form_attainment_fifth" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fifth">Удержал башню</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_crush" id="form_attainment_seventh">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_seventh">Разгромил отель</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--contacts">
+            <fieldset class="form-list__item form-list__item--contacts">
+              <legend class="form-list__title">Контактная информация</legend>
+              <div class="form-list__inputs-wrapper">
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_contacts_phone">Номер телефона</label>
+                  <input class="form-list__text-field form-list__text-field--phone" type="tel" name="phone" id="form_contacts_phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_contacts_email">Адрес почты</label>
+                  <input class="form-list__text-field form-list__text-field--email" type="email" name="email" id="form_contacts_email" placeholder="Ведите почту*" required>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--version">
+            <fieldset class="form-list__item form-list__item--version">
+              <legend class="form-list__title">С каким приложением вы путешествовали?</legend>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--review">
+            <fieldset class="form-list__item form-list__item--review">
+              <legend class="form-list__title">Опишите свои эмоции</legend>
+              <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+          </div>
+          <div class="form-list__bottom-wrapper main-wrapper">
             <button class="form-list__submit-btn submit-btn" type="submit">Отправить форму</button>
-            <p class="form-list__text"><span class="form-list__tip">*</span> - обязательные поля</p>
+            <p class="form-list__text"><span class="form-list__tip">*</span> - обязательные <span class="form-list__text-element">для заполнения</span> поля</p>
           </div>
         </form>
       </section>

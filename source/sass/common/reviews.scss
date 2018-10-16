@@ -62,6 +62,10 @@
   line-height: 30px;
 }
 
+.reviews .slider__toggle-arrow {
+  display: none;
+}
+
 @media (min-width: $tablet_width) {
   .reviews__item {
     display: flex;
@@ -124,5 +128,9 @@
 
   .reviews__toggles .slider__toggle {
     display: none;
+  }
+
+  .reviews .slider__toggle-arrow {
+    display: block;
   }
 }
