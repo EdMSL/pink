@@ -2,6 +2,8 @@ $main_pink: #d22856;
 $main_white: #ffffff;
 $main_text: #283645;
 $dark_bg: #283645;
+$tablet_width: 659px;
+$desktop_width: 960px;
 
 @mixin reset_indents {
   margin: 0;

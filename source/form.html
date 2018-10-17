@@ -2,97 +2,121 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк.Конкурс</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo main-logo">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="22px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-        <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-        <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-        <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-        <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-        </svg>
+      <div class="page-header__top">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo page-header__logo--fill main-logo">
+            <svg class="main-logo-image" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="22px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+            </svg>
+          </div>
+          <nav class="main-nav main-nav--open main-nav--no-js">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="index.html">Главная</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
+              <li class="nav-list__item"><a class="nav-list__link nav-list__link--active">Конкурс</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">HTML Academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"  fill="#ffffff" xml:space="preserve">
-            <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-            <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-          </svg>
-        </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
-          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active">Конкурс</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
       <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Страница конкурса Pink</h1>
       <section class="competition">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__description-element">Пожалуйста, заполните форму ниже:</span></p>
         <form class="competition__form form-list" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-list__item">
-            <legend class="visually-hidden">Фамилия Имя Отчество</legend>
-            <label class="form-list__label-text" for="form_surname">Фамилия</label>
-            <input class="form-list__text-field" type="text" name="surname" id="form_surname" placeholder="Укажите фамилию*" required>
-            <label class="form-list__label-text" for="form_name">Имя</label>
-            <input class="form-list__text-field" type="text" name="name" id="form_name" placeholder="Введите ваше имя*" required>
-            <label class="form-list__label-text" for="form_patronymic">Отчество</label>
-            <input class="form-list__text-field" type="text" name="patronymic" id="form_patronymic" placeholder="Ну и отчество тоже">
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--dark">
-            <legend class="visually-hidden">Ваши безбашенные достижения в путешествии</legend>
-            <p class="form-list__title">Ваши безбашенные достижения в путешествии</p>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_selfy" id="form_attainment_first" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_first">Сделал селфи с акулой</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_beach" id="form_attainment_second" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_second">Обгорел на пляже</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_noris" id="form_attainment_third">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_third">Видел Чака Норриса</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_souvenirs" id="form_attainment_fourth">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fourth">Накупил сувениров</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_tower" id="form_attainment_fifth" checked>
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fifth">Удержал башню</label>
-            <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_crush" id="form_attainment_seventh">
-            <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_seventh">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="form-list__item">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <label class="form-list__label-text" for="form_contacts_phone">Номер телефона</label>
-            <input class="form-list__text-field" type="tel" name="phone" id="form_contacts_phone" placeholder="Номер, пожалуйста">
-            <label class="form-list__label-text" for="form_contacts_email">Адрес почты</label>
-            <input class="form-list__text-field" type="email" name="email" id="form_contacts_email" placeholder="Ведите почту*" required>
-          </fieldset>
-          <fieldset class="form-list__item form-list__item--dark">
-            <legend class="visually-hidden">С каким приложением вы путешествовали?</legend>
-            <p class="form-list__title">С каким приложением вы путешествовали?</p>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
-            <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
-            <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
-          </fieldset>
-          <fieldset class="form-list__item">
-            <legend class="visually-hidden">Опишите свои эмоции</legend>
-            <p class="form-list__title">Опишите свои эмоции</p>
-            <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
-          <div class="main-wrapper">
+          <div class="form-list__wrapper form-list__wrapper--personal">
+            <fieldset class="form-list__item form-list__item--personal">
+              <legend class="visually-hidden">Фамилия Имя Отчество</legend>
+              <div class="form-list__inputs-wrapper">
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_surname">Фамилия</label>
+                  <input class="form-list__text-field" type="text" name="surname" id="form_surname" placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_name">Имя</label>
+                  <input class="form-list__text-field" type="text" name="name" id="form_name" placeholder="Введите ваше имя*" required>
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_patronymic">Отчество</label>
+                  <input class="form-list__text-field" type="text" name="patronymic" id="form_patronymic" placeholder="Ну и отчество тоже">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--progress">
+            <fieldset class="form-list__item form-list__item--progress">
+              <legend class="form-list__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-list__inputs-wrapper">
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_selfy" id="form_attainment_first" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_first">Сделал селфи с акулой</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_beach" id="form_attainment_second" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_second">Обгорел на пляже</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_noris" id="form_attainment_third">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_third">Видел Чака Норриса</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_souvenirs" id="form_attainment_fourth">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fourth">Накупил сувениров</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_tower" id="form_attainment_fifth" checked>
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_fifth">Удержал башню</label>
+                <input class="form-list__input-change visually-hidden" type="checkbox" name="attainment_crush" id="form_attainment_seventh">
+                <label class="form-list__label-change form-list__label-change--checkbox" for="form_attainment_seventh">Разгромил отель</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--contacts">
+            <fieldset class="form-list__item form-list__item--contacts">
+              <legend class="form-list__title">Контактная информация</legend>
+              <div class="form-list__inputs-wrapper">
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_contacts_phone">Номер телефона</label>
+                  <input class="form-list__text-field form-list__text-field--phone" type="tel" name="phone" id="form_contacts_phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form-list__input-field">
+                  <label class="form-list__label-text" for="form_contacts_email">Адрес почты</label>
+                  <input class="form-list__text-field form-list__text-field--email" type="email" name="email" id="form_contacts_email" placeholder="Ведите почту*" required>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--version">
+            <fieldset class="form-list__item form-list__item--version">
+              <legend class="form-list__title">С каким приложением вы путешествовали?</legend>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
+              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
+              <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
+            </fieldset>
+          </div>
+          <div class="form-list__wrapper form-list__wrapper--review">
+            <fieldset class="form-list__item form-list__item--review">
+              <legend class="form-list__title">Опишите свои эмоции</legend>
+              <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+          </div>
+          <div class="form-list__bottom-wrapper main-wrapper">
             <button class="form-list__submit-btn submit-btn" type="submit">Отправить форму</button>
-            <p class="form-list__text"><span class="form-list__tip">*</span> - обязательные поля</p>
+            <p class="form-list__text"><span class="form-list__tip">*</span> - обязательные <span class="form-list__text-element">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer main-wrapper">
       <div class="page-footer__alternative-logo alternative-logo">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <path class="alternative-logo__letter" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -133,5 +157,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

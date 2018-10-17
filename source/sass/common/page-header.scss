@@ -3,7 +3,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  padding-bottom: 52px;
+  // padding-bottom: 52px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -13,16 +13,89 @@
 
 .page-header--index {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0, 0 0;
+  background-position: left bottom, center top;
+  background-size: contain, contain;
+}
+
+.page-header--index .main-nav {
+  margin-bottom: 396px;
+}
+
+
+.page-header__logo {
+  padding: 22px 20px;
+
+  background-color: transparentize(#000000, 0.7);
+}
+
+.page-header__logo--fill {
+  background-color: $dark_bg;
+  box-shadow: inset 0 -1px 0 #000000;
 }
 
 .page-header__title {
+  width: 240px;
+
   @include reset_indents;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
 
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet_width) {
+  .page-header--index {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: right bottom, center top;
+    background-size: contain, cover;
+  }
+
+  .page-header--index .main-nav {
+    margin-bottom: 0;
+  }
+
+  .page-header__title {
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .page-header--index {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .page-header--index .main-nav {
+    margin-bottom: 0;
+  }
+
+  .page-header__top {
+    background-color: transparentize(#000000, 0.7);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop_width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 27px 10px 40px;
+  }
+
+  .page-header__logo {
+    padding: 0;
+
+    background-color: transparent;
+  }
 }

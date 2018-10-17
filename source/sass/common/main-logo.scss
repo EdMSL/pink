@@ -1,8 +1,7 @@
 @import "base/mixins_variables";
 
-.main-logo {
+.main-logo-image {
   display: block;
-  padding: 22px 20px;
-
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 75px;
+  height: 22px;
 }

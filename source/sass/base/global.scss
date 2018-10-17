@@ -46,3 +46,22 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+.block-wrapper {
+  overflow: hidden;
+}
+
+@media (min-width: $tablet_width) {
+  .main-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .main-wrapper {
+    width: 940px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

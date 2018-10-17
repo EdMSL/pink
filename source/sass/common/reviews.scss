@@ -1,13 +1,32 @@
 @import "base/mixins_variables";
 
 .reviews {
-  padding-top: 48px;
-  padding-bottom: 68px;
+  position: relative;
+
+  padding-top: 58px;
+  padding-bottom: 53px;
 
   text-align: center;
+
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    z-index: 5;
+
+    width: 100%;
+    height: 25px;
+    background-image: linear-gradient(to left top, transparent 0%, transparent 50%, #ffffff 51%, #ffffff 100%);
+  }
 }
 
 .reviews__list {
+  position: relative;
+
   margin-bottom: 40px;
 }
 
@@ -16,7 +35,10 @@
 }
 
 .reviews__author {
-  margin-bottom: 24px;
+  display: block;
+
+  @include reset_indents;
+  margin-bottom: 10px;
 
   font-size: 18px;
   line-height: 30px;
@@ -24,7 +46,91 @@
   font-style: normal;
 }
 
+.reviews__author-info {
+  display: none;
+
+  @include reset_indents;
+
+  font-size: 14px;
+  height: 30px;
+}
+
 .reviews__text {
+  @include reset_indents;
+
   font-size: 14px;
   line-height: 30px;
+}
+
+.reviews .slider__toggle-arrow {
+  display: none;
+}
+
+@media (min-width: $tablet_width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-info {
+    display: block;
+  }
+
+  .reviews__text {
+    order: -1;
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .reviews {
+    padding-top: 90px;
+  }
+
+  .reviews__list {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -80px;
+      left: calc(50% - 40px);
+
+      display: block;
+      width: 79px;
+      height: 64px;
+
+      background-image: url("../img/icon-quotes.svg");
+    }
+  }
+
+  .reviews__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .reviews__toggles {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .reviews__toggles .slider__toggle {
+    display: none;
+  }
+
+  .reviews .slider__toggle-arrow {
+    display: block;
+  }
 }

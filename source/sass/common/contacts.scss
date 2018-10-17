@@ -1,14 +1,18 @@
 @import "base/mixins_variables";
 
 .contaсts {
-  padding: 46px 0 38px;
+  padding: 46px 0 0;
 
   text-align: center;
 }
 
+.contacts__title-box {
+  margin-bottom: 36px;
+}
+
 .contaсts__title {
   @include reset_indents;
-  margin-bottom: 36px;
+  padding: 0 20px;
 
   font-size: 24px;
   line-height: 29px;
@@ -24,24 +28,35 @@
   font-weight: 700;
 }
 
+.contacts__item {
+  margin-bottom: 24px;
+}
+
+.contacts__item-box {
+  margin: 0 auto;
+}
+
 .contaсts__contact-item {
   position: relative;
 
-  display: block;
+  display: inline-block;
 
   @include reset_indents;
-  margin-bottom: 24px;
 
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: $main_pink;
 
-  &:hover:not(p) {
+  &:hover:not(p),
+  &:focus {
     color: $main_text;
+
+    outline: none;
   }
 
-  &:hover:not(p)::after {
+  &:hover:not(p)::after,
+  &:focus::after {
     content: "";
 
     position: absolute;
@@ -53,5 +68,92 @@
     height: 1px;
 
     background-color: $main_text;
+  }
+
+  &:active:not(p) {
+    color: transparentize($main_text, 0.7);
+  }
+
+  &:active:not(p)::after {
+    background-color: transparentize($main_text, 0.7);
+  }
+}
+
+.contacts__map {
+  position: relative;
+
+  width: 100%;
+  height: 200px;
+
+  overflow: hidden;
+
+  // &::before {
+  //   content: "";
+
+  //   position: absolute;
+  //   // top: -265px;
+  //   top: -130%;
+  //   left: 50%;
+
+  //   width: 100%;
+  //   height: 100%;
+  //   padding-bottom: 30%;
+
+  //   background: #ffffff;
+
+  //   transform-origin: 0 100%;
+  //   transform: rotate(-12deg) skew(66deg);
+  // }
+}
+
+@media (min-width: $tablet_width) {
+  .contacts__title-box {
+    margin-bottom: 42px;
+  }
+
+  .contaсts__title {
+    padding: 0;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts__map {
+    height: 375px;
+  }
+
+  .contacts__item-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 310px;
+    margin-bottom: 47px;
+
+    &:last-of-type {
+      width: 290px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .contacts__title-box {
+    margin-bottom: 57px;
+  }
+
+  .contaсts__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contaсts__item--email {
+    order: 1;
+  }
+
+  .contacts__map {
+    height: 500px;
   }
 }

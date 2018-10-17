@@ -1,14 +1,31 @@
 @import "base/mixins_variables.scss";
 
 .download {
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 35px;
 
   background-color: $dark_bg;
 }
 
+.download__wrapper {
+  padding: 0 20px;
+}
+
 .download__main-link {
   margin-bottom: 32px;
+}
+
+.download__slogan {
+  display: none;
+
+  text-align: center;
+
+  @include reset_indents;
+
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  color: $main-white;
 }
 
 .download__list {
@@ -44,4 +61,69 @@
   color: #ffffff;
   font-weight: 300;
   text-align: center;
+}
+
+@media (min-width: $tablet_width) {
+  .download {
+
+    padding-top: 93px;
+    padding-bottom: 110px;
+
+    background-color: transparent;
+  }
+
+  .download__wrapper {
+    width: 320px;
+    padding-right: 0;
+  }
+
+  .download__slogan {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .download__main-link {
+    margin-bottom: 46px;
+  }
+
+  .download__list {
+    margin-bottom: 35px;
+  }
+
+  .download__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .download {
+    width: $desktop_width;
+    margin: 0 auto;
+    padding-top: 108px;
+    padding-bottom: 125px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .download__wrapper {
+    padding-left: 10px;
+  }
+
+  .download__slogan {
+    margin-bottom: 50px;
+    padding: 0 7px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__main-link {
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 58px;
+  }
 }
