@@ -1,6 +1,7 @@
 @import "base/mixins_variables";
 
 .image-filter__image-block {
+  width: 100%;
   margin-bottom: 42px;
 }
 
@@ -13,6 +14,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+}
+
+.image-filter__controls {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .image-filter__control {
@@ -42,9 +48,18 @@
   }
 }
 
+.image-filter__sliders-block {
+
+}
+
 .image-filter__slider {
   margin-bottom: 74px;
   padding: 0 18px;
+}
+
+.image-filter__slider--fill,
+.image-filter__slider--contrast {
+  display: none;
 }
 
 .image-filter__slider-line {
@@ -77,6 +92,119 @@
   }
 }
 
+.image-filter__slider--hide {
+  display: none;
+}
+
 @media (min-width: $tablet_width) {
-  
+  .image-filter__image-block,
+  .image-filter__controls {
+    width: 300px;
+    margin: 0;
+  }
+
+  .image-filter__controls {
+    padding-left: 45px;
+  }
+
+  .image-filter__filter-change {
+    display: none;
+  }
+
+  .image-filter__slider {
+    position: relative;
+
+    min-height: 24px;
+    padding: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -20px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: #dddfe0;
+    }
+  }
+
+  .image-filter__slider--fill,
+  .image-filter__slider--contrast {
+    display: block;
+  }
+
+  .image-filter__slider--crop {
+    &::before {
+      background-image: url("../../img/icon-editor-crop.svg");
+    }
+  }
+
+  .image-filter__slider--fill {
+    &::before {
+      background-image: url("../../img/icon-editor-fill.svg");
+    }
+  }
+
+  .image-filter__slider--contrast {
+    &::before {
+      background-image: url("../../img/icon-editor-contrast.svg");
+      background-size: 16px 16px;
+    }
+  }
+
+  .image-filter__slider-line {
+    width: 202px;
+    margin-right: 18px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .image-filter__image-block,
+  .image-filter__controls {
+    width: 470px;
+  }
+
+  .image-filter__controls {
+    padding-right: 60px;
+    padding-left: 0;
+  }
+
+  .image-filter__slider {
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .image-filter__slider--contrast {
+    &::before {
+      background-size: 32px 32px;
+    }
+  }
+
+  .image-filter__slider-line {
+    width: 288px;
+  }
 }

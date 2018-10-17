@@ -31,7 +31,7 @@
   }
 }
 
-.posting__filter {
+.posting__wrapper {
   padding: 20px 20px 40px;
 
   background-color: #f2f2f2;
@@ -46,8 +46,52 @@
 }
 
 @media (min-width: $tablet_width) {
+  .posting {
+    &::after {
+      display: none;
+    }
+  }
+
   .posting__text {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .posting__filter {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .posting__buttons {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .posting__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    background-color: transparent;
+  }
+
+  .posting__filter {
+    width: 940px;
+    padding: 57px 0;
+
+    background-color: #f2f2f2;
+  }
+
+  .posting__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  .posting__main-button {
+    width: 183px;
+    margin-bottom: 0;
   }
 }
