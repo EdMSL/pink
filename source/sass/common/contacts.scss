@@ -1,9 +1,13 @@
 @import "base/mixins_variables";
 
 .contaсts {
-  padding: 46px 0 0;
+  padding: 40px 0 0;
 
   text-align: center;
+}
+
+.contacts__wrapper {
+  margin-bottom: 30px;
 }
 
 .contacts__title-box {
@@ -19,21 +23,26 @@
   font-weight: 300;
 }
 
+.contacts__item-box {
+  margin: 0 auto;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+}
+
 .contaсts__text {
   @include reset_indents;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-}
-
-.contacts__item {
-  margin-bottom: 24px;
-}
-
-.contacts__item-box {
-  margin: 0 auto;
 }
 
 .contaсts__contact-item {

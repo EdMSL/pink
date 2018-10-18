@@ -1,10 +1,10 @@
 @import "base/mixins_variables.scss";
 
 .download {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 
-  background-color: $dark_bg;
+  background-color: #1d2631;
 }
 
 .download__wrapper {
@@ -12,7 +12,7 @@
 }
 
 .download__main-link {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .download__slogan {
@@ -34,7 +34,8 @@
   align-items: center;
 
   @include reset_indents;
-  margin-bottom: 25px;
+  min-height: 58px;
+  margin-bottom: 20px;
   list-style: none;
 }
 

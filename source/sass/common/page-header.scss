@@ -3,27 +3,30 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  // padding-bottom: 52px;
+}
 
+.page-header--index .main-nav {
+  padding-bottom: 395px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center bottom;
+  background-size: 258px auto, cover;
+}
+
+.page-header--index .main-nav--open {
+  background-size: 258px auto, contain;
+}
+
+.page-header__top {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 }
 
-.page-header--index {
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: left bottom, center top;
-  background-size: contain, contain;
-}
-
-.page-header--index .main-nav {
-  margin-bottom: 396px;
-}
-
-
 .page-header__logo {
-  padding: 22px 20px;
+  padding: 22px 20px 26px;
 
   background-color: transparentize(#000000, 0.7);
 }
