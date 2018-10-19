@@ -35,18 +35,18 @@
     align-items: flex-end;
     width: 620px;
     margin: 0 auto;
-    padding: 95px 20px 110px;
+    padding: 95px 20px 85px;
 
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: 20px center;
-    background-size: 238px 276px;
+    background-size: 238px auto;
 
     &::after {
       content: "24";
 
       position: absolute;
-      top: 133px;
+      top: 115px;
       left: 38px;
 
       display: flex;
@@ -61,8 +61,8 @@
       font-weight: 700;
       color: $main_pink;
 
-      background-color: #dedede;
-      border: 10px solid $main_pink;
+      background-color: transparent;
+      border: 14px solid $main_pink;
       border-radius: 50%;
     }
   }
@@ -74,11 +74,11 @@
   }
 
   .analysis__title {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .analysis__description {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
 }
 

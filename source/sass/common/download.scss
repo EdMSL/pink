@@ -67,20 +67,25 @@
 @media (min-width: $tablet_width) {
   .download {
 
-    padding-top: 93px;
+    padding-top: 90px;
     padding-bottom: 110px;
 
     background-color: transparent;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto auto;
   }
 
   .download__wrapper {
-    width: 320px;
+    width: 300px;
     padding-right: 0;
   }
 
   .download__slogan {
+    width: 230px;
     display: block;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
 
   .download__main-link {

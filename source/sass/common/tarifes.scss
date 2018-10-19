@@ -56,7 +56,6 @@
   text-align: center;
 
   background-color: $dark_bg;
-  // border-left: 2px solid #f2f2f2;
 
   overflow: hidden;
 
@@ -185,118 +184,98 @@
 
 @media (min-width: $tablet_width) {
   .tarifes {
-    padding-bottom: 67px;
+    padding-bottom: 72px;
+
+    &::before {
+      height: 50px;
+    }
   }
 
   .tarifes__main-wrapper {
+    width: 620px;
     padding: 0 20px;
   }
 
   .tarifes__list {
-    width: 620px;
-
-    @include reset_indents;
-    margin: 0 auto;
-
+    width: 100%;
     border-collapse: separate;
 
-    & td,
-    & th {
-      position: relative;
+    background-color: transparent;
 
-      width: 155px;
-      box-sizing: border-box;
-
-      text-align: center;
-    }
+    transform: translate(0);
   }
 
   .tarifes__header {
-    padding: 10px 0 10px;
+    width: 155px;
+    box-sizing: border-box;
+  }
 
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
+  .tarifes__header--disabled {
+    display: table-cell;
 
-    background-color: $dark_bg;
-    border-right: 2px solid #f2f2f2;
+    background-color: transparent;
+    border-right: none;
+    border-bottom: 2px solid #e5e5e5;
+  }
 
+  .tarifes__header-wrapper {
+    padding: 13px 10px 10px;
+  }
+
+  .tarifes__header-wrapper--hit {
     overflow: hidden;
 
-    &:nth-child(2) {
-      border-radius: 2px 0 0 2px;
+    &::before {
+      top: 4px;
+      left: -30px;
+
+      font-weight: 400;
     }
-
-    &:last-child {
-      border-right: none;
-      border-radius: 0 2px 2px 0;
-    }
-  }
-
-  .tarifes__title {
-    @include reset_indents;
-    margin-bottom: 8px;
-
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-  }
-
-  .tarifes__price {
-    @include reset_indents;
-
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-
-  .tarifes__option {
-    padding: 11px 0;
-    padding-left: 15px;
-
-    text-align-last: left;
-    text-transform: uppercase;
-
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    border-top: none;
-  }
-
-  .tarifes__option--first {
-    box-shadow: 0 -2px 0 0 #e5e5e5;
-  }
-
-  .tarifes__option-availability {
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    border-top: none;
-    border-left: none;
-  }
-
-  .tarifes__option-availability--yes {
-    background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 31px auto;
-  }
-
-  .tarifes__option-availability--no {
-    background-image: url("../img/icon-no.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 27px auto;
   }
 
   .tarifes__title {
     font-size: 16px;
+    line-height: 30px;
   }
 
   .tarifes__price {
+    margin-top: -3px;
+
     font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tarifes__options-line {
+    border-bottom: 2px solid #e5e5e5;
   }
 
   .tarifes__option {
+    width: 155px;
+    padding: 5px 5px 8px 15px;
+    box-sizing: border-box;
+
     text-transform: none;
+
+    background-color: #ffffff;
+    border-right: none;
+    border-bottom: 2px solid #e5e5e5;
+
+    &:last-of-type {
+      border-right: 2px solid #e5e5e5;
+    }
+  }
+
+  .tarifes__option--first {
+    display: table-cell;
+  }
+
+  .tarifes__option-availability {
+    color: transparent;
+
+    &::after {
+      bottom: 10px;
+      right: calc(50% - 15px);
+    }
   }
 
   .tarifes__toggles {
@@ -305,24 +284,5 @@
 }
 
 @media (min-width: $desktop_width) {
-  .tarifes__list {
-    width: 940px;
 
-    & td,
-    & th {
-      width: 230px;
-    }
-  }
-
-  .tarifes__header {
-    padding: 15px 0;
-  }
-
-  .tarifes__option {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    font-size: 18px;
-    line-height: 30px;
-  }
 }

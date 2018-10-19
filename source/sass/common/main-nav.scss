@@ -142,7 +142,20 @@
   }
 }
 
+@media (min-width: $tablet_width) {
+  .main-nav__toggle {
+    position: absolute;
+    top: -68px;
+    right: 20px;
+  }
+}
+
 @media (min-width: $desktop_width) {
+  .main-nav {
+    display: flex;
+    width: auto;
+  }
+
   .main-nav--close .nav-list {
     display: flex;
   }

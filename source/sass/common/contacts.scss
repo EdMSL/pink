@@ -1,7 +1,7 @@
 @import "base/mixins_variables";
 
 .contaсts {
-  padding: 40px 0 0;
+  padding: 45px 0 0;
 
   text-align: center;
 }
@@ -109,13 +109,17 @@
     background-image: url("../../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
+    background-size: 100% 100%;
   }
 }
 
 @media (min-width: $tablet_width) {
+  .contacts__wrapper {
+    margin-bottom: 0;
+  }
+
   .contacts__title-box {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   .contaсts__title {
@@ -125,10 +129,6 @@
     line-height: 48px;
   }
 
-  .contacts__map {
-    height: 375px;
-  }
-
   .contacts__item-box {
     display: flex;
     flex-wrap: wrap;
@@ -136,12 +136,30 @@
   }
 
   .contacts__item {
-    width: 310px;
+    width: 300px;
     margin-bottom: 47px;
+    margin-left: 15px;
+
+    &:nth-of-type(odd) {
+      margin-left: 0;
+    }
 
     &:last-of-type {
       width: 290px;
       margin-bottom: 30px;
+      padding-top: 0;
+    }
+  }
+
+  .contaсts__text {
+    margin-bottom: 5px;
+  }
+
+  .contacts__map {
+    height: 375px;
+
+    &::before {
+      height: 65px;
     }
   }
 }

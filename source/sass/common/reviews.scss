@@ -59,9 +59,25 @@
 }
 
 @media (min-width: $tablet_width) {
+  .reviews {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  .reviews__list {
+    margin-bottom: 30px;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column;
+  }
+
+  .reviews__author {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .reviews__author-info {
