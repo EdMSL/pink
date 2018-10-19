@@ -47,14 +47,8 @@
   overflow: hidden;
 }
 
-.tarifes__header-wrapper {
-  padding: 10px 0;
-  border-right: 2px solid #f2f2f2;
-}
-
 .tarifes__header {
   width: 280px;
-  padding: 15px 10px 20px;
   box-sizing: border-box;
 
   color: #ffffff;
@@ -62,7 +56,9 @@
   text-align: center;
 
   background-color: $dark_bg;
-  border-right: 2px solid #f2f2f2;
+  // border-left: 2px solid #f2f2f2;
+
+  overflow: hidden;
 
   &:nth-of-type(2) {
     border-radius: 2px 0 0 2px;
@@ -70,6 +66,37 @@
 
   &:last-of-type {
     border-radius: 0 2px 2px 0;
+  }
+}
+
+.tarifes__header-wrapper {
+  position: relative;
+
+  padding: 15px 10px 20px;
+
+  border-left: 2px solid #f2f2f2;
+}
+
+.tarifes__header-wrapper--hit {
+  &::before {
+    content: "Хит";
+
+    position: absolute;
+    top: 10px;
+    left: -28px;
+
+    display: block;
+    width: 100px;
+    height: 30px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: $main_pink;
+
+    transform: rotate(-45deg);
   }
 }
 
