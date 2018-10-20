@@ -2,7 +2,7 @@
 
 .copyrights {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
   text-align: center;
@@ -30,6 +30,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .copyrights {
+    justify-content: flex-end;
   }
 }
 

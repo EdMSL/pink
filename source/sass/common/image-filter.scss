@@ -13,7 +13,7 @@
 .image-filter__filter-change {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .image-filter__controls {
@@ -23,7 +23,7 @@
 
 .image-filter__control {
   @include reset_indents;
-  margin-right: 45px;
+  margin-right: 30px;
 
   background-color: none;
   border: none;
@@ -48,8 +48,14 @@
   }
 }
 
+.image-filter__control--avtive {
+  & svg {
+    fill: $main_pink;
+  }
+}
+
 .image-filter__slider {
-  margin-bottom: 74px;
+  margin-bottom: 70px;
   padding: 0 18px;
 }
 

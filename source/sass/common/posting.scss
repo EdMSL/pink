@@ -3,13 +3,13 @@
 .posting {
   position: relative;
 
-  padding-top: 46px;
+  padding-top: 42px;
 
   &::after {
     content: "";
 
     position: absolute;
-    bottom: 205px;
+    bottom: 200px;
 
     display: block;
     width: 100%;
@@ -21,13 +21,14 @@
 
 .posting__text {
   @include reset_indents;
-  margin-bottom: 15px;
   padding: 0 30px;
 
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
 
   &:last-of-type {
-    margin-bottom: 48px;
+    margin-bottom: 43px;
   }
 }
 
