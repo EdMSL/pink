@@ -38,9 +38,21 @@
   }
 }
 
+.social-buttons__item--youtube {
+  & svg {
+    margin-left: 2px;
+  }
+}
+
 @media (min-width: $tablet_width) {
   .social-buttons__item {
     width: 47px;
     height: 47px;
+  }
+
+  .social-buttons__item--youtube {
+    & svg {
+      margin-left: 3px;
+    }
   }
 }

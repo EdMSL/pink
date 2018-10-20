@@ -56,20 +56,39 @@
   .posting__text {
     font-size: 18px;
     line-height: 30px;
+
+    &:last-of-type {
+      margin-bottom: 70px;
+    }
+  }
+
+  .posting__wrapper {
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .posting__filter {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 620px;
     margin: 0 auto;
   }
 
   .posting__buttons {
-    padding-right: 10px;
+    padding-right: 14px;
+  }
+
+  .posting__main-button {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: $desktop_width) {
+  .posting {
+    padding-top: 0;
+  }
+
   .posting__wrapper {
     width: 940px;
     margin: 0 auto;
