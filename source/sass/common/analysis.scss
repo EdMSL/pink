@@ -89,20 +89,23 @@
 
   .analysis__wrapper {
     width: 940px;
-    padding: 90px 10px 120px;
+    padding: 110px 10px 115px;
+    padding-right: 15px;
 
-    background-position: 10px top;
+    background-position: 15px 20px;
     background-size: 298px 345px;
 
     &::after {
-      top: 87px;
-      left: 50px;
+      top: 90px;
+      left: 35px;
 
-      width: 218px;
-      height: 218px;
+      width: 255px;
+      height: 255px;
 
       font-size: 120px;
       line-height: 186px;
+
+      border-width: 18px;
     }
   }
 
@@ -112,9 +115,21 @@
     width: 570px;
   }
 
+  .analysis__title {
+    margin-bottom: 22px;
+  }
+
+  .analysis__title br {
+    display: none;
+  }
+
   .analysis__description,
   .analysis__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .analysis__description {
+    margin-bottom: 30px;
   }
 }

@@ -165,6 +165,15 @@
   }
 }
 
+// .slider__arrows {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+
+//   width: 100%;
+//   min-height: 45px;
+// }
+
 .slider__toggle-arrow {
   position: absolute;
 
@@ -180,10 +189,10 @@
     content: "";
 
     position: absolute;
-    left: -3px;
+    left: -5px;
 
     width: 28px;
-    height: 1px;
+    height: 2px;
     background-color: #bec2c7;
   }
 

@@ -106,11 +106,11 @@
     width: $desktop_width;
     margin: 0 auto;
     padding-top: 108px;
-    padding-bottom: 125px;
+    padding-bottom: 120px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: 25px bottom;
   }
 
   .download__wrapper {
@@ -127,9 +127,12 @@
 
   .download__main-link {
     margin-bottom: 67px;
+
+    font-size: 21px;
+    line-height: 21px;
   }
 
   .download__list {
-    margin-bottom: 58px;
+    margin-bottom: 53px;
   }
 }

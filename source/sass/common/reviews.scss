@@ -94,7 +94,9 @@
 
 @media (min-width: $desktop_width) {
   .reviews {
-    padding-top: 90px;
+    position: relative;
+
+    padding-top: 185px;
   }
 
   .reviews__list {
@@ -102,7 +104,7 @@
       content: "";
 
       position: absolute;
-      top: -80px;
+      top: -115px;
       left: calc(50% - 40px);
 
       display: block;
@@ -114,6 +116,8 @@
   }
 
   .reviews__author {
+    margin-bottom: 3px;
+
     font-size: 24px;
     line-height: 30px;
   }
@@ -126,7 +130,7 @@
   .reviews__text {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .reviews__toggles {
@@ -140,5 +144,12 @@
 
   .reviews .slider__toggle-arrow {
     display: block;
+  }
+
+  .reviews__arrows {
+    position: absolute;
+    top: 210px;
+
+    width: 940px;
   }
 }

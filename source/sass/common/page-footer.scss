@@ -36,3 +36,9 @@
     width: 150px;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .page-footer {
+    padding-top: 75px;
+  }
+}
