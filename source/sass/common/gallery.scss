@@ -210,6 +210,13 @@
     margin: 0 auto 90px;
   }
 
+  .gallery__item--panoram {
+    &::before {
+      top: 55px;
+      right: 130px;
+    }
+  }
+
   .gallery__item--standart {
     min-height: 555px; /* Временное решение */
     margin-bottom: 55px;

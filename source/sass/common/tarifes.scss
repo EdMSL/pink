@@ -206,7 +206,7 @@
   }
 
   .tarifes__header {
-    width: 155px;
+    // width: 155px;
     box-sizing: border-box;
   }
 
@@ -294,8 +294,12 @@
     padding: 0 10px;
   }
 
+  .tarifes__header {
+    width: auto;
+  }
+
   .tarifes__header-wrapper {
-    padding-bottom: 20px;
+    padding: 13px 20px 20px;
   }
 
   .tarifes__header-wrapper--hit {
@@ -317,9 +321,15 @@
   }
 
   .tarifes__option {
-    padding: 15px 5px 15px 20px;
+    width: auto;
+    padding: 15px 10px 15px 20px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .tarifes__option--first {
+    display: table-cell;
+    // padding-right: 17px;
   }
 
   .tarifes__option-availability--no {

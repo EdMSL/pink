@@ -1,8 +1,8 @@
 @import "base/mixins_variables";
 
 .competition {
-  padding-top: 52px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 15px;
 }
 
 .competition__description {
@@ -21,7 +21,12 @@
 
 .form-list__wrapper {
   @include reset_indents;
-  padding: 40px 0;
+  padding: 35px 0 45px;
+}
+
+.form-list__wrapper--contacts {
+  padding-top: 33px;
+  padding-bottom: 43px;
 }
 
 .form-list__wrapper--progress,
@@ -49,14 +54,18 @@
 
   @include reset_indents;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   margin-left: auto;
 
   font-size: 14px;
-  line-height: 30px;
+  line-height: 18px;
   color: $main_pink;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form-list__item--review .form-list__title {
+  margin-bottom: 8px;
 }
 
 .form-list__item--contacts legend {
@@ -64,8 +73,10 @@
 }
 
 .form-list__label-text {
+  display: block;
+
   @include reset_indents;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-left: 22px;
 
   font-size: 14px;
@@ -75,7 +86,7 @@
 }
 
 .form-list__input-field {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -128,7 +139,7 @@
   display: block;
 
   @include reset_indents;
-  margin-bottom: 43px;
+  margin-bottom: 52px;
   margin-left: 70px;
 
   font-size: 18px;
@@ -167,6 +178,8 @@
 }
 
 .form-list__label-change--checkbox {
+  margin-bottom: 52px;
+
   &::after {
     top: 4px;
     left: -60px;
@@ -180,6 +193,8 @@
 }
 
 .form-list__label-change--radio {
+  margin-bottom: 45px;
+
   &::before {
     border-radius: 50%;
   }
@@ -213,7 +228,7 @@
 }
 
 .form-list__submit-btn {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .form-list__text {
@@ -234,9 +249,13 @@
 }
 
 @media (min-width: $tablet_width) {
+  .competition {
+    padding-top: 90px;
+  }
+
   .competition__description {
     width: 500px;
-    margin: 0 auto 20px;
+    margin: 0 auto 35px;
 
     font-size: 18px;
     line-height: 30px;
@@ -262,20 +281,25 @@
 
   .form-list__wrapper--contacts {
     order: 2;
+    padding-bottom: 20px;
   }
 
   .form-list__wrapper--version {
     order: 1;
+    padding-top: 15px;
+    padding-bottom: 25px;
   }
 
   .form-list__wrapper--review {
     order: 4;
+    padding-top: 10px;
+    padding-bottom: 65px;
   }
 
   .form-list__item {
     width: 620px;
     margin: 0 auto;
-    padding: 10px 60px 50px;
+    padding: 10px 60px 55px;
     box-sizing: border-box;
 
     border: 2px solid #e5e5e5;
@@ -292,12 +316,21 @@
     border: none;
   }
 
+  .form-list__item--review {
+    padding-top: 28px;
+    padding-bottom: 50px;
+  }
 
   .form-list__title {
     width: auto;
     margin: 0 auto;
     display: block;
     padding: 0 20px;
+  }
+
+  .form-list__item--contacts {
+    padding-top: 38px;
+    padding-bottom: 0;
   }
 
   .form-list__item--contacts legend {
@@ -307,11 +340,30 @@
   .form-list__input-field {
     display: flex;
     align-items: baseline;
+    margin-bottom: 52px;
+  }
+
+  .form-list__item--contacts .form-list__input-field {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 28px;
   }
 
   .form-list__label-text {
-    margin-right: 20px;
+    margin-right: 22px;
     margin-left: 0;
+  }
+
+  .form-list__label-change {
+    margin-left: 57px;
+
+    &::before {
+      left: -60px;
+    }
+
+    &::after {
+      left: -48px;
+    }
   }
 
   .form-list__text-field {
@@ -322,12 +374,8 @@
   .form-list__text-field--message {
     display: block;
     width: 100%;
+    min-height: 195px;
     margin: 0 auto;
-  }
-
-  .form-list__item--contacts .form-list__input-field {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .form-list__item--contacts .form-list__label-text {
@@ -361,11 +409,13 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 40px;
   }
 
   .form-list__submit-btn,
   .form-list__text {
-    width: 295px;
+    width: 300px;
+    margin-bottom: 0;
   }
 
   .form-list__text {
@@ -376,13 +426,13 @@
 @media (min-width: $desktop_width) {
   .competition__description {
     width: 770px;
+    margin-bottom: 70px;
   }
 
   .competition__form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // align-items: stretch;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -393,13 +443,35 @@
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-    // margin: 0 auto;
+    padding-bottom: 0;
   }
 
   .form-list__wrapper--personal,
   .form-list__wrapper--version {
     width: 435px;
     padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .form-list__wrapper--contacts {
+    padding-top: 55px;
+  }
+
+  .form-list__wrapper--progress {
+    padding-top: 55px;
+  }
+
+  .form-list__wrapper--review {
+    margin-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .form-list__bottom-wrapper {
+    margin-bottom: 0;
+  }
+
+  .form-list__bottom-wrapper.main-wrapper {
+    padding: 0;
   }
 
   .form-list__item {
@@ -409,8 +481,23 @@
   .form-list__item--personal {
     display: flex;
     flex-wrap: wrap;
-    // align-items: stretch;
-    // align-content: stretch;
+  }
+
+  .form-list__item--version {
+    padding: 50px 20px 60px;
+  }
+
+  .form-list__item--contacts {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  .form-list__item--progress {
+    padding: 50px 40px 5px;
+  }
+
+  .form-list__item--review {
+    padding: 23px 59px 45px;
   }
 
   .form-list__inputs-wrapper {
@@ -421,12 +508,16 @@
     width: 100%;
   }
 
+  .form-list__title {
+    padding: 0 30px;
+  }
+
   .form-list__item--personal .form-list__input-field {
     width: 100%;
     margin-bottom: 0;
 
     &:first-of-type {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 
@@ -444,10 +535,41 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 20px;
   }
 
   .form-list__item--progress .form-list__label-change {
-    width: 200px;
+    width: auto;
+    margin-right: 60px;
+  }
+
+  .form-list__label-change--radio {
+    margin-left: 115px;
+  }
+
+  .form-list__label-change--checkbox:nth-of-type(2) {
+    order: 3;
+    margin-right: 100px;
+  }
+
+  .form-list__label-change--checkbox:nth-of-type(3) {
+    order: 1;
+  }
+
+  .form-list__label-change--checkbox:nth-of-type(4) {
+    order: 4;
+    margin-right: 65px;
+  }
+
+  .form-list__label-change--checkbox:nth-of-type(5) {
+    order: 2;
+    margin-right: 0;
+  }
+
+  .form-list__label-change--checkbox:nth-of-type(6) {
+    order: 5;
+    margin-right: 0;
   }
 
   .form-list__text {
@@ -456,5 +578,9 @@
 
   .form-list__text-element {
     display: inline;
+  }
+
+  .form-list__text-field--message {
+    min-height: 130px;
   }
 }
