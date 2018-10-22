@@ -35,18 +35,18 @@
     align-items: flex-end;
     width: 620px;
     margin: 0 auto;
-    padding: 95px 20px 110px;
+    padding: 95px 20px 85px;
 
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: 20px center;
-    background-size: 238px 276px;
+    background-size: 238px auto;
 
     &::after {
       content: "24";
 
       position: absolute;
-      top: 133px;
+      top: 115px;
       left: 38px;
 
       display: flex;
@@ -61,8 +61,8 @@
       font-weight: 700;
       color: $main_pink;
 
-      background-color: #dedede;
-      border: 10px solid $main_pink;
+      background-color: transparent;
+      border: 14px solid $main_pink;
       border-radius: 50%;
     }
   }
@@ -74,11 +74,11 @@
   }
 
   .analysis__title {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .analysis__description {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
 }
 
@@ -89,20 +89,23 @@
 
   .analysis__wrapper {
     width: 940px;
-    padding: 90px 10px 120px;
+    padding: 110px 10px 115px;
+    padding-right: 15px;
 
-    background-position: 10px top;
+    background-position: 15px 20px;
     background-size: 298px 345px;
 
     &::after {
-      top: 87px;
-      left: 50px;
+      top: 90px;
+      left: 35px;
 
-      width: 218px;
-      height: 218px;
+      width: 255px;
+      height: 255px;
 
       font-size: 120px;
       line-height: 186px;
+
+      border-width: 18px;
     }
   }
 
@@ -112,9 +115,21 @@
     width: 570px;
   }
 
+  .analysis__title {
+    margin-bottom: 22px;
+  }
+
+  .analysis__title br {
+    display: none;
+  }
+
   .analysis__description,
   .analysis__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .analysis__description {
+    margin-bottom: 30px;
   }
 }

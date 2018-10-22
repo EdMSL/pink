@@ -3,7 +3,7 @@
 .main-button {
   display: inline-block;
   width: 100%;
-  padding: 17px 0 19px;
+  padding: 15px 0 17px;
   vertical-align: top;
 
   font-size: 18px;
@@ -11,6 +11,7 @@
   font-weight: 700;
   text-align: center;
 
+  background-color: transparent;
   border-style: solid;
   border-width: 3px;
   border-radius: 28px;
@@ -96,7 +97,7 @@
 
 .slider__toggle {
   @include reset_indents;
-  margin-right: 19px;
+  margin-right: 18px;
   width: 6px;
   height: 6px;
 
@@ -107,7 +108,7 @@
   border-radius: 50%;
   box-sizing: content-box;
 
-  &:last-child {
+  &:last-of-type {
     margin-right: 0;
   }
 
@@ -165,6 +166,15 @@
   }
 }
 
+// .slider__arrows {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+
+//   width: 100%;
+//   min-height: 45px;
+// }
+
 .slider__toggle-arrow {
   position: absolute;
 
@@ -180,10 +190,10 @@
     content: "";
 
     position: absolute;
-    left: -3px;
+    left: -5px;
 
     width: 28px;
-    height: 1px;
+    height: 2px;
     background-color: #bec2c7;
   }
 

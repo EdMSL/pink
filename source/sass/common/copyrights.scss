@@ -33,6 +33,12 @@
   }
 }
 
+@media (min-width: $tablet_width) {
+  .copyrights {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: $desktop_width) {
   .copyrights__text {
     font-size: 18px;

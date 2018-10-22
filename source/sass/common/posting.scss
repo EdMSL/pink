@@ -3,13 +3,13 @@
 .posting {
   position: relative;
 
-  padding-top: 46px;
+  padding-top: 42px;
 
   &::after {
     content: "";
 
     position: absolute;
-    bottom: 205px;
+    bottom: 200px;
 
     display: block;
     width: 100%;
@@ -21,13 +21,14 @@
 
 .posting__text {
   @include reset_indents;
-  margin-bottom: 15px;
   padding: 0 30px;
 
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
 
   &:last-of-type {
-    margin-bottom: 48px;
+    margin-bottom: 43px;
   }
 }
 
@@ -55,20 +56,39 @@
   .posting__text {
     font-size: 18px;
     line-height: 30px;
+
+    &:last-of-type {
+      margin-bottom: 70px;
+    }
+  }
+
+  .posting__wrapper {
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .posting__filter {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 620px;
     margin: 0 auto;
   }
 
   .posting__buttons {
-    padding-right: 10px;
+    padding-right: 14px;
+  }
+
+  .posting__main-button {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: $desktop_width) {
+  .posting {
+    padding-top: 0;
+  }
+
   .posting__wrapper {
     width: 940px;
     margin: 0 auto;

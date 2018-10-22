@@ -5,3 +5,10 @@
   width: 75px;
   height: 22px;
 }
+
+@media (min-width: $tablet_width) {
+  .main-logo-image {
+    width: 147px;
+    height: 40px;
+  }
+}
