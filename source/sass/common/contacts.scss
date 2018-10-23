@@ -115,6 +115,11 @@
   }
 }
 
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: $tablet_width) {
   .contaсts {
     padding-top: 45px;
