@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: $dark_bg;
+  // background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -30,6 +31,13 @@
   background-size: cover;
 }
 
+.page-header__wrapper--bottom {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  background-size: cover;
+}
+
 .page-header__logo {
   padding: 22px 20px 26px;
 
@@ -45,7 +53,7 @@
   width: 240px;
 
   @include reset_indents;
-  min-height: 138px;
+  min-height: 140px;
   margin: 0 auto;
   padding: 30px 20px;
   padding-bottom: 0;
@@ -60,6 +68,7 @@
 @media (min-width: $tablet_width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 182% auto;
   }
 
   .page-header--index {
@@ -69,6 +78,13 @@
 
   .page-header__wrapper {
     background-image: none;
+  }
+
+  .page-header__wrapper--bottom {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    background-size: 182% auto;
   }
 
   .page-header--index .main-nav {
@@ -100,19 +116,23 @@
   }
 
   .page-header--index {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center top;
     background-size: cover;
   }
 
   .page-header--photo,
   .page-header--form {
-    background-position: top center;
-    background-size: 215% 215%;
+    background-position: center top;
+    background-size: 215% auto;
   }
 
   .page-header__top {
     background-color: transparentize(#000000, 0.7);
+    background-image: none;
+  }
+
+  .page-header__wrapper,
+  .page-header__wrapper--bottom {
     background-image: none;
   }
 
@@ -123,6 +143,10 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 27px 10px 43px;
+  }
+
+  .page-header__wrapper--bottom {
+    padding: 0;
   }
 
   .page-header__logo {
