@@ -16,12 +16,13 @@
 
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left bottom, center bottom;
+  background-position: left bottom, center -70px;
   background-size: 258px auto, cover;
 }
 
 .page-header--index .main-nav--open {
-  background-size: 258px auto, contain;
+  background-position: left bottom, center 170px;
+  // background-size: 258px auto, center 100px;
 }
 
 .page-header__wrapper {
