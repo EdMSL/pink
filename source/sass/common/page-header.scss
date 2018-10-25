@@ -76,7 +76,7 @@
   text-align: center;
 }
 
-@media (min-width: $tablet_width) and (min-resolution: $retina-dpi), (min-width: $tablet_width) and (min-resolution: $retina-dppx) {
+@media (min-width: $tablet_width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 182% auto;

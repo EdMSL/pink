@@ -462,13 +462,17 @@
   .form-list__wrapper {
     width: 100%;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   .form-list__wrapper--personal,
   .form-list__wrapper--version {
     width: 435px;
     box-sizing: border-box;
+  }
+
+  .form-list__wrapper--review {
+    margin-bottom: 65px;
   }
 
   .form-list__inputs-wrapper {
@@ -504,8 +508,7 @@
   }
 
   .form-list__inputs-wrapper--review {
-    margin-bottom: 60px;
-    padding-top: 60px;
+    padding: 35px 60px 40px;
   }
 
   .form-list__bottom-wrapper {
@@ -518,12 +521,6 @@
 
   .form-list__item {
     width: 100%;
-  }
-
-
-
-  .form-list__inputs-wrapper--review {
-    padding: 23px 0 45px;
   }
 
   .form-list__title {
