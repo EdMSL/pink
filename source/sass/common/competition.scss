@@ -304,31 +304,14 @@
   .form-list__item {
     width: 620px;
     margin: 0 auto;
-    padding: 10px 60px 55px;
+    padding: 0;
     box-sizing: border-box;
 
     border: 2px solid #e5e5e5;
   }
 
-  .form-list__item--progress,
-  .form-list__item--version {
-    padding-top: 50px;
-  }
-
-  .form-list__item--personal {
-    padding: 0;
-
+  .form-list__item--no-border {
     border: none;
-  }
-
-  .form-list__item--review {
-    padding-top: 28px;
-    padding-bottom: 50px;
-  }
-
-  .form-list__item--contacts {
-    padding-top: 38px;
-    padding-bottom: 0;
   }
 
   .form-list__item--contacts legend {
@@ -338,20 +321,40 @@
   .form-list__title {
     width: auto;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .form-list__inputs-wrapper {
+    padding: 10px 60px 55px;
+  }
+
+  .form-list__inputs-wrapper--progress,
+  .form-list__inputs-wrapper--version {
+    padding-top: 50px;
+  }
+
+  .form-list__inputs-wrapper--personal {
     padding: 0;
+  }
+
+  .form-list__inputs-wrapper--review {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+
+  .form-list__inputs-wrapper--contacts {
+    padding-top: 38px;
+    padding-bottom: 0;
   }
 
   .form-list__input-field {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 52px;
   }
 
-  .form-list__item--contacts .form-list__input-field {
+  .form-list__inputs-wrapper--contacts .form-list__input-field {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 28px;
@@ -360,6 +363,12 @@
   .form-list__label-text {
     margin-right: 22px;
     margin-left: 0;
+  }
+
+  .form-list__inputs-wrapper--contacts .form-list__label-text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 18px;
   }
 
   .form-list__label-change {
@@ -385,17 +394,15 @@
     width: auto;
   }
 
+  .form-list__inputs-wrapper--contacts .form-list__text-field {
+    padding: 14px 17px 15px;
+  }
+
   .form-list__text-field--message {
     display: block;
     width: 100%;
     min-height: 195px;
     margin: 0 auto;
-  }
-
-  .form-list__item--contacts .form-list__label-text {
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 20px;
   }
 
   .form-list__text-field--phone,
@@ -453,29 +460,50 @@
   }
 
   .form-list__wrapper {
-    display: flex;
     width: 100%;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    padding: 0;
+    margin-bottom: 55px;
   }
 
   .form-list__wrapper--personal,
   .form-list__wrapper--version {
     width: 435px;
-    padding-top: 0;
     box-sizing: border-box;
   }
 
-  .form-list__wrapper--contacts {
-    padding-top: 55px;
+  .form-list__inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
-  .form-list__wrapper--progress {
-    padding-top: 55px;
+  .form-list__inputs-wrapper--personal {
+    padding: 0;
+    padding-top: 15px;
   }
 
-  .form-list__wrapper--review {
+  .form-list__inputs-wrapper--version {
+    padding: 53px 20px 60px;
+  }
+
+  .form-list__inputs-wrapper--contacts {
+    flex-direction: row;
+    padding: 35px 60px 15px;
+  }
+
+  .form-list__inputs-wrapper--progress {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px 0 5px 60px;
+  }
+
+  .form-list__inputs-wrapper--review {
     margin-bottom: 60px;
     padding-top: 60px;
   }
@@ -492,64 +520,25 @@
     width: 100%;
   }
 
-  .form-list__item--personal {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .form-list__item--version {
-    padding: 50px 20px 60px;
-  }
 
-  .form-list__item--contacts {
-    padding-top: 35px;
-    padding-bottom: 15px;
-  }
-
-  .form-list__item--progress {
-    padding: 50px 40px 5px;
-  }
-
-  .form-list__item--review {
-    padding: 23px 59px 45px;
-  }
-
-  .form-list__inputs-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
+  .form-list__inputs-wrapper--review {
+    padding: 23px 0 45px;
   }
 
   .form-list__title {
     padding: 0 30px;
   }
 
-  .form-list__item--personal .form-list__input-field {
+  .form-list__inputs-wrapper .form-list__input-field {
     width: 100%;
-
-    &:first-of-type {
-      margin-top: 15px;
-    }
   }
 
-  .form-list__item--contacts .form-list__inputs-wrapper {
-    flex-direction: row;
-  }
-
-  .form-list__item--contacts .form-list__input-field {
-    width: 375px;
+  .form-list__inputs-wrapper--contacts .form-list__input-field {
+    width: 373px;
     margin-top: 0;
     margin-bottom: 0;
-  }
-
-  .form-list__item--progress .form-list__inputs-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 0 20px;
+    // box-sizing: border-box;
   }
 
   .form-list__label-change--checkbox {
@@ -559,6 +548,7 @@
 
   .form-list__label-change--radio {
     margin-left: 115px;
+    margin-bottom: 43px;
   }
 
   .form-list__label-change--beach {
@@ -592,6 +582,10 @@
 
   .form-list__text-element {
     display: inline;
+  }
+
+  .form-list__text-field {
+    min-height: 63px;
   }
 
   .form-list__text-field--message {
