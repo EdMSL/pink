@@ -97,18 +97,22 @@
           <div class="form-list__wrapper form-list__wrapper--version">
             <fieldset class="form-list__item form-list__item--version">
               <legend class="form-list__title">С каким приложением путешествовали?</legend>
-              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
-              <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
-              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
-              <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
-              <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
-              <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
+              <div class="form-list__inputs-wrapper">
+                <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_ios" checked>
+                <label class="form-list__label-change form-list__label-change--radio" for="form_application_ios">Pink для iOS</label>
+                <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_android">
+                <label class="form-list__label-change form-list__label-change--radio" for="form_application_android">Pink на Android</label>
+                <input class="form-list__input-change visually-hidden" type="radio" name="application" id="form_application_windows">
+                <label class="form-list__label-change form-list__label-change--radio" for="form_application_windows">Windows Phone</label>
+              </div>
             </fieldset>
           </div>
           <div class="form-list__wrapper form-list__wrapper--review">
             <fieldset class="form-list__item form-list__item--review">
               <legend class="form-list__title">Опишите свои эмоции</legend>
-              <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <div class="form-list__inputs-wrapper">
+                <textarea class="form-list__text-field form-list__text-field--message" name="message_emotion" id="form_message">Можно прям в красках, не стесняясь в выражениях</textarea>
+              </div>
             </fieldset>
           </div>
           <div class="form-list__bottom-wrapper main-wrapper">

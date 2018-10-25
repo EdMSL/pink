@@ -36,13 +36,9 @@
 
 .form-list__item {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 
   border: none;
-
-  &:last-of-type {
-    // padding-bottom: 50px;
-  }
 }
 
 .form-list__item--review {
@@ -70,6 +66,10 @@
 
 .form-list__item--contacts legend {
   display: none;
+}
+
+.form-list__inputs-wrapper {
+  padding: 0 20px;
 }
 
 .form-list__label-text {
@@ -112,6 +112,11 @@
   }
 
   &::placeholder {
+    color: $main_text;
+  }
+
+  &::-moz-placeholder {
+    opacity: 0.9;
     color: $main_text;
   }
 
@@ -321,13 +326,6 @@
     padding-bottom: 50px;
   }
 
-  .form-list__title {
-    width: auto;
-    margin: 0 auto;
-    display: block;
-    padding: 0 20px;
-  }
-
   .form-list__item--contacts {
     padding-top: 38px;
     padding-bottom: 0;
@@ -335,6 +333,16 @@
 
   .form-list__item--contacts legend {
     display: block;
+  }
+
+  .form-list__title {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .form-list__inputs-wrapper {
+    padding: 0;
   }
 
   .form-list__input-field {
@@ -448,8 +456,8 @@
     display: flex;
     width: 100%;
     padding-right: 0;
-    padding-left: 0;
     padding-bottom: 0;
+    padding-left: 0;
   }
 
   .form-list__wrapper--personal,
