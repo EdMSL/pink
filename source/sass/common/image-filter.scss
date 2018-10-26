@@ -25,7 +25,7 @@
   @include reset_indents;
   margin-right: 30px;
 
-  background-color: none;
+  background-color: transparent;
   border: none;
 
   cursor: pointer;
@@ -176,7 +176,7 @@
 
   .image-filter__slider--crop {
     &::before {
-      background-image: url("../../img/icon-editor-crop.svg");
+      background-image: url("../img/icon-editor-crop.svg");
     }
 
     & .image-filter__slider-control {
@@ -186,7 +186,7 @@
 
   .image-filter__slider--fill {
     &::before {
-      background-image: url("../../img/icon-editor-fill.svg");
+      background-image: url("../img/icon-editor-fill.svg");
     }
 
     & .image-filter__slider-control {
@@ -198,7 +198,7 @@
     &::before {
       left: 3px;
 
-      background-image: url("../../img/icon-editor-contrast.svg");
+      background-image: url("../img/icon-editor-contrast.svg");
       background-size: 16px 16px;
     }
 

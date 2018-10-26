@@ -4,6 +4,8 @@ $main_text: #283645;
 $dark_bg: #283645;
 $tablet_width: 659px;
 $desktop_width: 960px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @mixin reset_indents {
   margin: 0;
