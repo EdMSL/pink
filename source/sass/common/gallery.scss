@@ -158,13 +158,21 @@
     }
   }
 
-  .gallery__item .gallery__image-block {
-    min-height: 300px; /*Временное решение*/
-    background-color: red; /*Временное решение*/
+  .gallery__item--panoram .gallery__image-block {
+    max-width: 100%;
+    // height: auto;
+    overflow: hidden;
+    min-height: 500px;
   }
 
-  .gallery__item--panoram .gallery__image-block {
-    min-height: 510px;  /* Временное решение */
+  .gallery__item--panoram .gallery__image {
+    display: block;
+    width: auto;
+    // height: auto;
+    min-width: 709px;
+    // max-width: 100vw;
+    min-height: 100%;
+    margin: 0 auto;
   }
 
   .gallery__description-block {
@@ -246,5 +254,14 @@
   .gallery__item--panoram .gallery__image-block {
     height: 505px;  /* Временное решение */
     overflow: hidden;
+  }
+
+  .gallery__post-likes--panoram {
+    margin-right: 35px;
+    margin-left: auto;
+
+    &::before {
+      left: 107px;
+    }
   }
 }

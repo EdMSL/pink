@@ -194,7 +194,8 @@
 
     width: 28px;
     height: 2px;
-    background-color: #bec2c7;
+    background-color: $main_text;
+    opacity: 0.3;
   }
 
   &::before {
@@ -205,6 +206,16 @@
   &::after {
     top: 30px;
     transform: rotate(45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::after,
+  &:active::before {
+    opacity: 0.1;
   }
 }
 
