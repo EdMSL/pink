@@ -40,6 +40,7 @@
   "dependencies": {
     "imagemin": "^6.0.0",
     "imagemin-webp": "^4.1.0",
-    "normalize.scss": "^0.1.0"
+    "normalize.scss": "^0.1.0",
+    "svgxuse": "^1.2.6"
   }
 }
