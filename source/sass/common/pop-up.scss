@@ -1,0 +1,57 @@
+@import "base/mixins_variables";
+
+.pop-up {
+  position: fixed;
+  top: calc(50vh - 160px);
+  left: calc(50vw - 160px);
+
+  width: 320px;
+  padding-top: 40px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 transparentize(#000000, 0.85);
+}
+
+.pop-up--failure {
+  top: calc(50vh - 145px);
+  display: none;
+}
+
+.pop-up--succes {
+  top: calc(50vh - 190px);
+  display: none;
+}
+
+.pop-up--active {
+  display: block;
+}
+
+.pop-up__title {
+  @include reset_indents;
+  margin-bottom: 25px;
+  padding: 0 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.pop-up__text {
+  @include reset_indents;
+  margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.pop-up__wrapper {
+  padding: 50px 20px;
+
+  background-color: #f2f2f2;
+}
+
+.pop-up__wrapper--no-color {
+  padding-top: 10px;
+
+  background-color: transparent;
+}

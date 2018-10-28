@@ -19,4 +19,4 @@ menuButton.addEventListener('click', function(evt) {
     menu.classList.add('main-nav--open');
     headerLogo.classList.add('page-header__logo--fill');
   }
-})
+});

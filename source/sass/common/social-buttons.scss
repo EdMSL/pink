@@ -13,15 +13,13 @@
   height: 45px;
   margin-right: 12px;
 
+  background-repeat: no-repeat;
+  background-position: center center;
   border: 3px solid #e9ebec;
   border-radius: 50%;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  & svg {
-    fill: $main_pink;
   }
 
   &:hover,
@@ -30,29 +28,28 @@
   }
 
   &:active {
-    border-color: transparentize($main_text, 0.9);
-  }
-
-  &:active svg {
+    border-color: transparentize($main_text, 0.6);
     opacity: 0.3;
   }
 }
 
-.social-buttons__item--youtube {
-  & svg {
-    margin-left: 2px;
-  }
+.social-buttons__item--twitter {
+  background-image: url("../img/icon-twitter.svg");
 }
+
+.social-buttons__item--facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.social-buttons__item--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-position: calc(50% + 2px) center;
+}
+
 
 @media (min-width: $tablet_width) {
   .social-buttons__item {
     width: 47px;
     height: 47px;
-  }
-
-  .social-buttons__item--youtube {
-    & svg {
-      margin-left: 3px;
-    }
   }
 }

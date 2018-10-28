@@ -16,19 +16,19 @@
   line-height: 18px;
 }
 
+.copyrights__academy-icon {
+  display: block;
+
+  fill: $main_pink;
+}
+
 .copyrights__link {
-  & svg {
-    display: block;
-
-    fill: $main_pink;
-  }
-
-  &:hover svg,
-  &:focus svg {
+  &:hover .copyrights__academy-icon,
+  &:focus .copyrights__academy-icon {
     fill: $main_text;
   }
 
-  &:active {
+  &:active .copyrights__academy-icon {
     opacity: 0.3;
   }
 }
