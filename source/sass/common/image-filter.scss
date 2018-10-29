@@ -106,10 +106,6 @@
     box-sizing: border-box;
   }
 
-  .image-filter__image-block {
-    min-height: 400px; /* Временное решение*/
-  }
-
   .image-filter__controls {
     display: flex;
     flex-direction: column;
@@ -120,10 +116,6 @@
 
   .image-filter__filter-change {
     display: none;
-  }
-
-  .image-filter__sliders-block {
-    // margin-bottom: 87px;
   }
 
   .image-filter__slider {
@@ -199,7 +191,7 @@
       left: 3px;
 
       background-image: url("../img/icon-editor-contrast.svg");
-      background-size: 16px 16px;
+      background-size: 18px 18px;
     }
 
     & .image-filter__slider-control {
@@ -218,6 +210,14 @@
   .image-filter__image-block,
   .image-filter__controls {
     width: 470px;
+  }
+
+  .image-filter__image-block {
+    padding-left: 80px;
+  }
+
+  .image-filter__image {
+    margin: 0;
   }
 
   .image-filter__controls {
@@ -257,7 +257,7 @@
   .image-filter__slider--contrast {
     &::before {
       left: 0;
-      background-size: 32px 32px;
+      background-size: 30px 30px;
     }
 
     & .image-filter__slider-control {

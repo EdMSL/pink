@@ -48,6 +48,8 @@
 
 @media (min-width: $tablet_width) {
   .posting {
+    padding-top: 45px;
+
     &::after {
       display: none;
     }
