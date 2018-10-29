@@ -55,8 +55,8 @@
   background-color: $dark_bg;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left bottom, center -75px;
-  background-size: 258px 320px auto;
+  background-position: left bottom, center -65px;
+  background-size: 258px 320px, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
@@ -66,7 +66,7 @@
 
 .page-header--index .main-nav--open {
   background-position: left bottom, center 190px;
-  background-size: 258px auto, 320px auto;
+  background-size: 258px auto, 100% auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
