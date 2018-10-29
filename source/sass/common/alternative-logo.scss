@@ -5,10 +5,19 @@
   text-align: center;
 }
 
+.alternative-logo__logo-image {
+  fill: $main_text;
+  // margin-left: 7px;
+}
+
+.alternative-logo__logo-image--desktop {
+  display: none;
+}
+
 .alternative-logo__logo-link {
   display: block;
 
-  &:hover .alternative-logo__letter {
+  &:hover .alternative-logo__logo-image {
     fill: $main_pink;
   }
 
@@ -16,7 +25,17 @@
     opacity: 0.3;
   }
 
-  &:active .alternative-logo__letter {
+  &:active .alternative-logo__logo-image {
     fill: $main_text;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .alternative-logo__logo-image--mobile {
+    display: none;
+  }
+
+  .alternative-logo__logo-image--desktop {
+    display: block;
   }
 }
