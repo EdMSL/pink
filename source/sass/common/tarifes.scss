@@ -126,6 +126,7 @@
   position: relative;
 
   padding: 15px;
+  padding-right: 55px;
   padding-left: 23px;
 
   font-size: 14px;
@@ -145,7 +146,7 @@
     content: "";
 
     position: absolute;
-    bottom: 15px;
+    bottom: calc(50% - 13px);
     right: 17px;
 
     display: block;
