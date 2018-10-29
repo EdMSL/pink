@@ -7,7 +7,7 @@
 .gallery__text {
   @include reset_indents;
   margin-bottom: 50px;
-  padding: 0 38px;
+  padding: 0 35px;
 
   font-size: 14px;
   line-height: 30px;
@@ -85,30 +85,34 @@
   margin-bottom: 10px;
 }
 
+.gallery__likes-block {
+  display: flex;
+  align-items: center;
+}
+
 .gallery__post-likes {
   position: relative;
 
   @include reset_indents;
-  margin-left: 32px;
 
   font-size: 12px;
   line-height: 24px;
   color: $main_pink;
   text-transform: uppercase;
+}
 
-  &::before {
-    content: "";
+.gallery__likes-button {
+  @include reset_indents;
+  display: block;
+  width: 13px;
+  height: 12px;
+  margin-right: 18px;
+  order: -1;
 
-    position: absolute;
-    top: 5px;
-    left: -30px;
-
-    display: block;
-    width: 13px;
-    height: 12px;
-
-    background-image: url("../img/icon-heart.svg");
-  }
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  border: none;
 }
 
 @media (min-width: $tablet_width) {
@@ -118,7 +122,7 @@
 
   .gallery__text {
     width: 450px;
-    margin: 0 auto 75px;
+    margin: 0 auto 77px;
 
     font-size: 18px;
     line-height: 30px;
@@ -173,16 +177,17 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-grow: 1;
-    padding: 23px 28px 25px;
+    padding: 23px 28px 22px;
   }
 
   .gallery__description-block--panoram {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 25px;
   }
 
   .gallery__post-text {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .gallery__post-text--panoram {
@@ -190,29 +195,33 @@
     margin-bottom: 0;
   }
 
-  .gallery__post-likes {
+  .gallery__likes-block {
+    justify-content: space-between;
     margin-top: auto;
-    margin-left: 0;
+  }
 
-    &::before {
-      left: calc(100% - 18px);
-    }
+  .gallery__likes-block--panoram {
+    margin-left: auto;
   }
 
   .gallery__post-likes--panoram {
-    margin-right: 30px;
-    margin-left: auto;
+    margin-right: 18px;
+  }
 
-    &::before {
-      left: 105px;
-    }
+  .gallery__likes-button {
+    margin-right: 3px;
+    order: 1;
+  }
+
+  .gallery__likes-block--panoram .gallery__likes-button {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $desktop_width) {
   .gallery__text {
     width: 600px;
-    margin: 0 auto 90px;
+    margin: 0 auto 88px;
   }
 
   .gallery__item--panoram {
@@ -242,12 +251,7 @@
     min-width: 1200px;
   }
 
-  .gallery__post-likes--panoram {
-    margin-right: 35px;
-    margin-left: auto;
-
-    &::before {
-      left: 107px;
-    }
+  .gallery__likes-block--panoram .gallery__likes-button {
+    margin-right: 3px;
   }
 }
