@@ -534,12 +534,15 @@
     width: 373px;
     margin-top: 0;
     margin-bottom: 0;
-    // box-sizing: border-box;
   }
 
   .form-list__label-change--checkbox {
     width: auto;
     margin-right: 60px;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   .form-list__label-change--radio {

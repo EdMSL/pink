@@ -169,6 +169,7 @@
 
   .page-header__wrapper {
     display: flex;
+    // flex-wrap: wrap;
     justify-content: space-between;
     max-width: $desktop_width;
     box-sizing: border-box;
@@ -187,6 +188,8 @@
   }
 
   .page-header__logo {
+    width: 150px;
+    margin-right: 50px;
     padding: 0;
 
     background-color: transparent;
