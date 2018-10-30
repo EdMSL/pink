@@ -153,11 +153,15 @@
 @media (min-width: $desktop_width) {
   .main-nav {
     display: flex;
-    width: auto;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: 650px;
   }
 
   .main-nav--close .nav-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .main-nav--close .main-nav__toggle {

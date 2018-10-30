@@ -7,7 +7,6 @@
 
 .competition__description {
   margin: 0;
-  // margin-bottom: 35px;
   padding: 0 20px 0;
 
   font-size: 14px;
@@ -60,11 +59,11 @@
   text-transform: uppercase;
 }
 
-.form-list__item--review .form-list__title {
-  margin-bottom: 8px;
+.form-list__wrapper--review .form-list__title {
+  margin-bottom: 15px;
 }
 
-.form-list__item--contacts legend {
+.form-list__wrapper--contacts .form-list__title {
   display: none;
 }
 
@@ -535,12 +534,15 @@
     width: 373px;
     margin-top: 0;
     margin-bottom: 0;
-    // box-sizing: border-box;
   }
 
   .form-list__label-change--checkbox {
     width: auto;
     margin-right: 60px;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   .form-list__label-change--radio {

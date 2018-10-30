@@ -52,6 +52,11 @@
   & svg {
     fill: $main_pink;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main_pink;
+  }
 }
 
 .image-filter__slider {
@@ -106,10 +111,6 @@
     box-sizing: border-box;
   }
 
-  .image-filter__image-block {
-    min-height: 400px; /* Временное решение*/
-  }
-
   .image-filter__controls {
     display: flex;
     flex-direction: column;
@@ -120,10 +121,6 @@
 
   .image-filter__filter-change {
     display: none;
-  }
-
-  .image-filter__sliders-block {
-    // margin-bottom: 87px;
   }
 
   .image-filter__slider {
@@ -176,7 +173,7 @@
 
   .image-filter__slider--crop {
     &::before {
-      background-image: url("../img/icon-editor-crop.svg");
+      background-image: url("../img/icon-editor-crop-bg.svg");
     }
 
     & .image-filter__slider-control {
@@ -186,7 +183,7 @@
 
   .image-filter__slider--fill {
     &::before {
-      background-image: url("../img/icon-editor-fill.svg");
+      background-image: url("../img/icon-editor-fill-bg.svg");
     }
 
     & .image-filter__slider-control {
@@ -198,8 +195,8 @@
     &::before {
       left: 3px;
 
-      background-image: url("../img/icon-editor-contrast.svg");
-      background-size: 16px 16px;
+      background-image: url("../img/icon-editor-contrast-bg.svg");
+      background-size: 18px 18px;
     }
 
     & .image-filter__slider-control {
@@ -218,6 +215,14 @@
   .image-filter__image-block,
   .image-filter__controls {
     width: 470px;
+  }
+
+  .image-filter__image-block {
+    padding-left: 80px;
+  }
+
+  .image-filter__image {
+    margin: 0;
   }
 
   .image-filter__controls {
@@ -257,7 +262,7 @@
   .image-filter__slider--contrast {
     &::before {
       left: 0;
-      background-size: 32px 32px;
+      background-size: 30px 30px;
     }
 
     & .image-filter__slider-control {
