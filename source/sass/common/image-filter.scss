@@ -52,6 +52,11 @@
   & svg {
     fill: $main_pink;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main_pink;
+  }
 }
 
 .image-filter__slider {
@@ -168,7 +173,7 @@
 
   .image-filter__slider--crop {
     &::before {
-      background-image: url("../img/icon-editor-crop.svg");
+      background-image: url("../img/icon-editor-crop-bg.svg");
     }
 
     & .image-filter__slider-control {
@@ -178,7 +183,7 @@
 
   .image-filter__slider--fill {
     &::before {
-      background-image: url("../img/icon-editor-fill.svg");
+      background-image: url("../img/icon-editor-fill-bg.svg");
     }
 
     & .image-filter__slider-control {
@@ -190,7 +195,7 @@
     &::before {
       left: 3px;
 
-      background-image: url("../img/icon-editor-contrast.svg");
+      background-image: url("../img/icon-editor-contrast-bg.svg");
       background-size: 18px 18px;
     }
 
