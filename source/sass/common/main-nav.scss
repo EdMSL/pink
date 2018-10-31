@@ -81,7 +81,9 @@
 }
 
 .main-nav--open .main-nav__toggle:hover::before,
-.main-nav--open .main-nav__toggle:hover::after {
+.main-nav--open .main-nav__toggle:hover::after,
+.main-nav--open .main-nav__toggle:focus::before,
+.main-nav--open .main-nav__toggle:focus::after {
   background-color: $main_pink;
 }
 
@@ -90,7 +92,8 @@
   background-color: transparentize($main_pink, 0.7);
 }
 
-.main-nav--close .main-nav__toggle:hover::before {
+.main-nav--close .main-nav__toggle:hover::before,
+.main-nav--close .main-nav__toggle:focus::before {
   background-color: $main_pink;
   box-shadow: 0 10px 0 0 $main_pink, 0 20px 0 0 $main_pink;
 }

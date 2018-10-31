@@ -20,6 +20,15 @@
 .analysis__link {
   color: $main_pink;
   text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $main_text;
+  }
+
+  &:active {
+    color: transparentize($main_text, 0.7);
+  }
 }
 
 @media (min-width: $tablet_width) {
@@ -36,11 +45,6 @@
     width: 620px;
     margin: 0 auto;
     padding: 95px 20px 85px;
-
-    // background-image: url("../img/icon-timer.svg");
-    // background-repeat: no-repeat;
-    // background-position: 20px center;
-    // background-size: 238px auto;
 
     &::before {
       content: "";
@@ -106,10 +110,6 @@
     width: 940px;
     padding: 110px 10px 115px;
     padding-right: 15px;
-
-    // background-position: 5px 20px;
-    // background-size: 298px 345px;
-    // box-sizing: border-box;
 
     &::before {
       top: 20px;

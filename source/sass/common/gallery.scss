@@ -104,7 +104,7 @@
 .gallery__likes-button {
   @include reset_indents;
   display: block;
-  width: 13px;
+  width: 14px;
   height: 12px;
   margin-right: 18px;
   order: -1;
@@ -113,6 +113,10 @@
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   border: none;
+
+  &:focus {
+    outline: 1px dashed #5f5f5f;
+  }
 }
 
 @media (min-width: $tablet_width) {
