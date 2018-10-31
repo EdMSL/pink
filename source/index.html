@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк.Главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
@@ -15,13 +21,10 @@
       <div class="page-header__top">
         <div class="page-header__wrapper">
           <div class="page-header__logo page-header__logo--fill">
-            <a>
-              <!-- <img class="main-logo-image" src="img/adaptive-logo.svg" width="100%"> -->
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="main-logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-              </picture>
+            <a class="main-logo__link">
+              <svg class="main-logo-image main-logo-image--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use></svg>
+              <svg class="main-logo-image main-logo-image--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use></svg>
+              <svg class="main-logo-image main-logo-image--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use></svg>
             </a>
           </div>
           <nav class="main-nav main-nav--open main-nav--no-js">
@@ -242,7 +245,7 @@
       </div>
     </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
   <script defer src="js/svgxuse.min.js"></script>
   </body>
 </html>

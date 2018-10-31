@@ -4,11 +4,50 @@
   display: block;
   width: 75px;
   height: 22px;
+
+  fill: #ffffff;
+}
+
+.main-logo__link {
+  &:hover .main-logo-image,
+  &:focus .main-logo-image {
+    fill: $main_pink;
+  }
+
+  &:active .main-logo-image {
+    fill: $main_white;
+    opacity: 0.3;
+  }
+}
+
+.main-logo-image--tablet,
+.main-logo-image--desktop {
+  display: none;
 }
 
 @media (min-width: $tablet_width) {
   .main-logo-image {
     width: 147px;
     height: 40px;
+  }
+
+  .main-logo-image--tablet {
+    display: block;
+  }
+
+  .main-logo-image--mobile,
+  .main-logo-image--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .main-logo-image--desktop {
+    display: block;
+  }
+
+  .main-logo-image--mobile,
+  .main-logo-image--tablet {
+    display: none;
   }
 }

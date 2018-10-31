@@ -94,6 +94,10 @@
 
   cursor: pointer;
 
+  &:focus {
+    outline: 1px dashed #5f5f5f;
+  }
+
   &:active {
     background-color: $main_pink;
   }

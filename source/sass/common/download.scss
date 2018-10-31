@@ -51,6 +51,10 @@
 
 .download__link {
   background-color: $main-white;
+
+  &:focus {
+    outline: 1px dashed #ffffff;
+  }
 }
 
 .download__link-image {

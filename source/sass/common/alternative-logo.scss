@@ -16,7 +16,8 @@
 .alternative-logo__logo-link {
   display: block;
 
-  &:hover .alternative-logo__logo-image {
+  &:hover .alternative-logo__logo-image,
+  &:focus .alternative-logo__logo-image {
     fill: $main_pink;
   }
 
