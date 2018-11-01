@@ -112,11 +112,7 @@
 
   &::placeholder {
     color: $main_text;
-  }
-
-  &::-moz-placeholder {
-    opacity: 0.9;
-    color: $main_text;
+    opacity: 1;
   }
 
   &:hover {
@@ -216,19 +212,36 @@
   }
 }
 
-.form-list__input-change:checked + .form-list__label-change::after, {
-  display: block;
-}
+.form-list__input-change {
+  &:checked + .form-list__label-change {
+    &::after {
+      display: block;
+    }
+  }
 
-.form-list__input-change:focus + .form-list__label-change::before,
-.form-list__input-change:checked:hover + .form-list__label-change::before,
-.form-list__input-change:checked:focus + .form-list__label-change::before {
-  border-color: $main_text;
-}
+  &:focus + .form-list__label-change,
+  &:checked:hover + .form-list__label-change,
+  &:checked:focus + .form-list__label-change {
+    &::before {
+      border-color: $main_text;
+    }
+  }
 
-.form-list__input-change:active + .form-list__label-change::before,
-.form-list__input-change:checked:active + .form-list__label-change::before {
-  border-color: $main_pink;
+  &:active + .form-list__label-change,
+  &:checked:active + .form-list__label-change {
+    &::before {
+      border-color: $main_pink;
+    }
+  }
+
+  &:disabled + .form-list__label-change,
+  &:disabled:hover + .form-list__label-change,
+  &:disabled:checked:hover + .form-list__label-change,
+  &:disabled:checked + .form-list__label-change {
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .form-list__submit-btn {
@@ -323,6 +336,10 @@
     padding: 0 30px;
   }
 
+  .form-list__wrapper--contacts .form-list__title {
+    display: block;
+  }
+
   .form-list__inputs-wrapper {
     padding: 10px 60px 55px;
   }
@@ -337,7 +354,7 @@
   }
 
   .form-list__inputs-wrapper--review {
-    padding-top: 35px;
+    padding-top: 20px;
     padding-bottom: 50px;
   }
 
@@ -507,7 +524,7 @@
   }
 
   .form-list__inputs-wrapper--review {
-    padding: 35px 60px 40px;
+    padding: 20px 60px 40px;
   }
 
   .form-list__bottom-wrapper {

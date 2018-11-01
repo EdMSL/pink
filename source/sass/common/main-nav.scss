@@ -40,67 +40,71 @@
   display: block;
 }
 
-.main-nav--close .main-nav__toggle::before {
-  content: "";
+.main-nav--close .main-nav__toggle {
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 50px;
-  height: 4px;
+    width: 50px;
+    height: 4px;
 
-  background-color: $main_white;
-  box-shadow: 0 10px 0 0 $main_white, 0 20px 0 0 $main_white;
+    background-color: $main_white;
+    box-shadow: 0 10px 0 0 $main_white, 0 20px 0 0 $main_white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $main_pink;
+    box-shadow: 0 10px 0 0 $main_pink, 0 20px 0 0 $main_pink;
+  }
+
+  &:active::before {
+    background-color: transparentize($main_pink, 0.7);
+    box-shadow: 0 10px 0 0 transparentize($main_pink, 0.7), 0 20px 0 0 transparentize($main_pink, 0.7);
+  }
 }
 
 .main-nav--no-js .main-nav__toggle {
   display: none;
 }
 
-.main-nav--open .main-nav__toggle::before,
-.main-nav--open .main-nav__toggle::after {
-  content: "";
+.main-nav--open .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
 
-  position: absolute;
-  top: 10px;
-  right: -2px;
+    position: absolute;
+    top: 10px;
+    right: -2px;
 
-  width: 28px;
-  height: 5px;
+    width: 28px;
+    height: 5px;
 
-  background-color: $main_white;
-}
+    background-color: $main_white;
+  }
 
-.main-nav--open .main-nav__toggle::before {
-  transform: rotate(45deg);
-}
+  &::before {
+    transform: rotate(45deg);
+  }
 
-.main-nav--open .main-nav__toggle::after {
-  transform: rotate(-45deg);
-}
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-.main-nav--open .main-nav__toggle:hover::before,
-.main-nav--open .main-nav__toggle:hover::after,
-.main-nav--open .main-nav__toggle:focus::before,
-.main-nav--open .main-nav__toggle:focus::after {
-  background-color: $main_pink;
-}
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $main_pink;
+  }
 
-.main-nav--open .main-nav__toggle:active::before,
-.main-nav--open .main-nav__toggle:active::after {
-  background-color: transparentize($main_pink, 0.7);
-}
-
-.main-nav--close .main-nav__toggle:hover::before,
-.main-nav--close .main-nav__toggle:focus::before {
-  background-color: $main_pink;
-  box-shadow: 0 10px 0 0 $main_pink, 0 20px 0 0 $main_pink;
-}
-
-.main-nav--close .main-nav__toggle:active::before {
-  background-color: transparentize($main_pink, 0.7);
-  box-shadow: 0 10px 0 0 transparentize($main_pink, 0.7), 0 20px 0 0 transparentize($main_pink, 0.7);
+  &:active::before,
+  &:active::after {
+    background-color: transparentize($main_pink, 0.7);
+  }
 }
 
 .nav-list {
@@ -161,7 +165,8 @@
     width: 650px;
   }
 
-  .main-nav--close .nav-list {
+  .main-nav--close .nav-list,
+  .main-nav--open .nav-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
