@@ -8,6 +8,7 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "del": "^3.0.0",
+    "gh-pages": "4.0.0",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -30,7 +31,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
